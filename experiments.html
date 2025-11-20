@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script src='main.js'></script>
+</head>
+<body>
+
+<meu-header pagina="exp">
+    <span slot="titulo">Página Inicial</span>
+    <div slot="menu">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+    </div>
+</meu-header>
+
+<hr>
+
+    <dialog id="janela">
+  <h2>Confirmação</h2>
+  <p>Tem certeza que quer excluir?</p>
+  <button onclick="janela.close()">Cancelar</button>
+  <button>Confirmar</button>
+</dialog>
+
+<button onclick="janela.showModal()">Abrir diálogo</button>
+
+<hr>
+
+<button popovertarget="info">Mostrar ajuda</button>
+
+<div popover id="info">
+  <p>Este campo é obrigatório. Use letras e números.</p>
+</div>
+
+<hr>
+
+<template id="produto-template">
+  <div class="produto">
+    <h2 class="titulo"></h2>
+    <p class="preco"></p>
+  </div>
+</template>
+
+<section id="lista-produtos"></section>
+
+<script>
+  const produtos = [
+    { titulo: "Camiseta", preco: "R$ 49,90" },
+    { titulo: "Tênis", preco: "R$ 199,90" }
+  ];
+
+  const container = document.querySelector("#lista-produtos");
+  const modelo = document.querySelector("#produto-template");
+
+  produtos.forEach(p => {
+    // clona o conteúdo do <template>
+    const clone = modelo.content.cloneNode(true);
+    clone.querySelector(".titulo").textContent = p.titulo;
+    clone.querySelector(".preco").textContent = p.preco;
+    container.appendChild(clone);
+  });
+</script>
+
+<hr>
+
+<template id="user-card-template">
+    <link rel='stylesheet' type='text/css' media='screen' href='src/styles/test.css'>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  </style>
+
+  <div class="card">
+    <p class="nome"><slot name="nome"></slot></p>
+    <p><slot name="idade"></slot></p>
+  </div>
+</template>
+
+<user-card>
+  <span slot="nome">Maria</span>
+  <span slot="idade">28 anos</span>
+</user-card>
+
+<user-card>
+  <span slot="nome">João</span>
+  <span slot="idade">35 anos</span>
+</user-card>
+
+<script>
+  class UserCard extends HTMLElement {
+    constructor() {
+      super();
+      const template = document.getElementById('user-card-template');
+      const shadow = this.attachShadow({ mode: 'open' });
+      shadow.appendChild(template.content.cloneNode(true));
+    }
+  }
+  customElements.define('user-card', UserCard);
+</script>
+
+</body>
+</html>

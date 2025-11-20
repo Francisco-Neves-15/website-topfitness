@@ -1,0 +1,166 @@
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--th-bg-1);
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  min-height: 100dvh;
+}
+[data-device="small"] main {
+  padding: 0.5em;
+}
+[data-device="medium"] main {
+  padding: 0.75em;
+}
+[data-device="large"] main {
+  padding: 1em;
+}
+
+section {
+  width: 100%;
+}
+
+h1 {
+  font-size: var(--font-3xl);
+  color: var(--th-text-1);
+}
+
+h2 {
+  font-size: var(--font-2xl);
+  color: var(--th-text-1);
+}
+
+h3 {
+  font-size: var(--font-xl);
+  color: var(--th-text-1);
+}
+
+p {
+  font-size: var(--font-base);
+  color: var(--th-text-1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--th-link-1);
+}
+
+ul {
+  list-style-type: none;
+  list-style: none;
+}
+
+/* *$ec* Icones */
+.gIcon {
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gIcon svg {
+  aspect-ratio: 1/1;
+  width: 24px;
+  height: auto;
+}
+
+/* *$ec* Hover Animation */
+.hvAnim {
+  cursor: pointer;
+  position: relative;
+}
+.hvAnim::before {
+  content: "";
+  position: absolute;
+  background-color: var(--th-link-1);
+  height: 2px;
+  border-radius: 0.2em;
+
+  transition: width 0.3s ease-in-out;
+  width: 0%;
+}
+.hvAnim:hover::before {
+  width: 100%;
+}
+
+.hvAnim.left::before {
+  left: 0;
+}
+.hvAnim.mid::before {
+  left: 50%;
+  translate: -50% 0;
+}
+.hvAnim.right::before {
+  right: 0;
+}
+
+.hvAnim.top::before {
+  top: 0;
+}
+.hvAnim.bot::before {
+  bottom: 0;
+}
+
+.hvAnim.hvSecondary::before {
+  background-color: var(--th-highlight);
+}
+
+/* *$ec* Texto quando selecionamos com o Mouse */
+::selection {
+  background-color: var(--cl-selection-bg);
+  color: var(--cl-selection-text);
+}
+
+/* *$ec* Barra Lateral */
+
+/* Tamanho da Barra */
+::-webkit-scrollbar {
+  width: clamp(4px, 1vw, 10px);
+}
+
+/* Fundo da Area da Barra */
+::-webkit-scrollbar-track {
+  background: var(--th-scrollbar-bg);
+}
+
+/* Cor da Barra Normal */
+::-webkit-scrollbar-thumb {
+  background: var(--th-scrollbar-cl);
+  border-radius: 4px;
+}
+
+/* Cor da Barra quando com Mouse em Cima */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--th-scrollbar-cl-hover);
+}
+
+/* *$ec* Botão para acessibilidade, pula para o conteúdo principal, ignorando items da navegação */
+#link-skip-main {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 1000;
+  background-color: var(--cl-primary-200);
+  color: #ffffff;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: opacity 0s ease-in-out;
+}
+
+#link-skip-main:focus {
+  opacity: 1;
+  pointer-events: auto;
+  outline: 4px solid #ffffff;
+}

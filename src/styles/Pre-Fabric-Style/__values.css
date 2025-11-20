@@ -1,0 +1,97 @@
+/* === Thick's === */
+:root {
+  --thick-1: 0.2rem;
+  --thick-2: 0.3rem;
+  --thick-3: 0.4rem;
+  --thick-4: 0.5rem;
+  --thick-5: 0.75rem;
+  --thick-6: 1rem;
+}
+
+/* === Spacing === */
+:root {
+  --space-0: 0rem;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-10: 2.5rem;
+  --space-11: 2.75rem;
+  --space-12: 3rem;
+  --space-13: 3.25rem;
+  --space-14: 3.5rem;
+  --space-15: 3.75rem;
+  --space-16: 4rem;
+  --space-17: 4.25rem;
+  --space-18: 4.5rem;
+  --space-19: 4.75rem;
+  --space-20: 5rem;
+  --space-21: 5.25rem;
+  --space-22: 5.5rem;
+  --space-23: 5.75rem;
+  --space-24: 6rem;
+}
+
+/* === Rounded === */
+:root {
+  --rounded-1: 0.50rem;
+  --rounded-2: 0.75rem;
+  --rounded-3: 1rem;
+  --rounded-4: 1.5rem;
+}
+
+/* === Size === */
+:root {
+  --size-0: 0rem;
+  --size-1: 1rem;
+  --size-2: 2rem;
+  --size-3: 3rem;
+  --size-4: 4rem;
+  --size-5: 5rem;
+  --size-6: 6rem;
+  --size-7: 7rem;
+  --size-8: 8rem;
+  --size-9: 9rem;
+  --size-10: 10rem;
+  --size-11: 11rem;
+  --size-12: 12rem;
+  --size-13: 13rem;
+  --size-14: 14rem;
+  --size-15: 15rem;
+  --size-16: 16rem;
+  --size-17: 17rem;
+  --size-18: 18rem;
+  --size-19: 19rem;
+  --size-20: 20rem;
+  --size-21: 21rem;
+  --size-22: 22rem;
+  --size-23: 23rem;
+  --size-24: 24rem;
+  --size-25: 25rem;
+  --size-26: 26rem;
+  --size-27: 27rem;
+  --size-28: 28rem;
+  --size-29: 29rem;
+  --size-30: 30rem;
+  --size-31: 31rem;
+  --size-32: 32rem;
+}
+
+/* Fonts */
+:root {
+  --font-xm: 0.75rem;
+  --font-sm: 0.85rem;
+  --font-base: 1rem;
+  --font-md: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 2rem;
+  --font-3xl: 3rem;
+  --font-4xl: 4rem;
+  --font-5xl: 5rem;
+}

@@ -1,0 +1,38 @@
+/* Dimensions */
+
+/* Positions */
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.position-fixed    { position: fixed;    }
+.position-static   { position: static;   }
+.position-sticky   { position: sticky;   }
+
+/* Z Index */
+.zindex-
+
+/* Top */
+.top-0  { top: var(--space-0);  }
+.top-1  { top: var(--space-1);  }
+.top-2  { top: var(--space-2);  }
+.top-3  { top: var(--space-3);  }
+.top-4  { top: var(--space-4);  }
+.top-5  { top: var(--space-5);  }
+.top-6  { top: var(--space-6);  }
+.top-7  { top: var(--space-7);  }
+.top-8  { top: var(--space-8);  }
+.top-9  { top: var(--space-9);  }
+.top-10 { top: var(--space-10); }
+.top-11 { top: var(--space-11); }
+.top-12 { top: var(--space-12); }
+.top-13 { top: var(--space-13); }
+.top-14 { top: var(--space-14); }
+.top-15 { top: var(--space-15); }
+.top-16 { top: var(--space-16); }
+.top-17 { top: var(--space-17); }
+.top-18 { top: var(--space-18); }
+.top-19 { top: var(--space-19); }
+.top-20 { top: var(--space-20); }
+.top-21 { top: var(--space-21); }
+.top-22 { top: var(--space-22); }
+.top-23 { top: var(--space-23); }
+.top-24 { top: var(--space-24); }

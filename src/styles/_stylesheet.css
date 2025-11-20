@@ -1,0 +1,81 @@
+/* === Stylesheet === */
+:root {
+  /* Cores Neutras */
+  --cl-light-100: #F4F4F4;
+  --cl-light-200: #E0E0E0;
+  --cl-dark-100: #121212;
+  --cl-dark-200: #212121;
+  --cl-neutral-100: #BCBCBC;
+  --cl-neutral-200: #838383;
+  --cl-neutral-300: #4B4B4B;
+  /* Cores Bases */
+  --cl-primary-100: #F49329;
+  --cl-primary-200: #F47426;
+  --cl-primary-300: #F45422;
+  --cl-secondary-100: #0F88F2;
+  --cl-secondary-200: #2848FE;
+  --cl-secondary-300: #112BBF;
+  --cl-tertiary-100: #5C3E94;
+  --cl-tertiary-200: #412B6B;
+  --cl-tertiary-300: #211832;
+  /* Cores para Utilidades */
+  --cl-success-100: #1FF500;
+  --cl-success-200: #2ECB23;
+  --cl-success-300: #47A035;
+  --cl-danger-100: #FF8080;
+  --cl-danger-200: #F52417;
+  --cl-danger-300: #B81B12;
+  --cl-warning-100: #F4E400;
+  --cl-warning-200: #F4C400;
+  --cl-warning-300: #F4A300;
+  /* Transparencias */
+  --cl-light-tr: #F4F4F440;
+  --cl-dark-tr: #12121240;
+  --cl-neutral-tr: #BCBCBC80;
+  --cl-primary-tr: #F4742680;
+  --cl-secondary-tr: #2848FE80;
+  --cl-tertiary-tr: #412B6B80;
+  --cl-success-tr: #1FF50080;
+  --cl-danger-tr: #F5241780;
+  --cl-warning-tr: #F4E40080;
+  /* Overlays */
+  --cl-overlay-50: #00000080;
+  /* Selection */
+  --cl-selection-bg: rgb(244, 116, 38, 0.75);
+  --cl-selection-text: #F4F4F4;
+}
+
+/* === Tema Padrão em caso de erro === */
+/* :root {
+
+} */
+
+/* === Tema Claro === */
+[data-theme="light"] {
+  --th-bg-1: var(--cl-light-100);
+  --th-bg-2: var(--cl-light-200);
+  --th-text-1: var(--cl-dark-100);
+  --th-text-2: var(--cl-light-100);
+  --th-text-f: var(--cl-neutral-300);
+  --th-link-1: var(--cl-secondary-200);
+  --th-accent-1: var(--cl-secondary-200);
+  /* Scrollbar */
+  --th-scrollbar-bg: var(--cl-neutral-100);
+  --th-scrollbar-cl: var(--cl-dark-tr);
+  --th-scrollbar-cl-hover: var(--cl-primary-300);
+}
+
+/* === Tema Escuro === */
+[data-theme="dark"] {
+  --th-bg-1: var(--cl-dark-100);
+  --th-bg-2: var(--cl-dark-200);
+  --th-text-1: var(--cl-light-100);
+  --th-text-2: var(--cl-dark-100);
+  --th-text-f: var(--cl-neutral-100);
+  --th-link-1: var(--cl-warning-100);
+  --th-accent-1: var(--cl-warning-100);
+  /* Scrollbar */
+  --th-scrollbar-bg: var(--cl-neutral-300);
+  --th-scrollbar-cl: var(--cl-light-tr);
+  --th-scrollbar-cl-hover: var(--cl-primary-300);
+}

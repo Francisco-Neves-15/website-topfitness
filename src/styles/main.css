@@ -1,0 +1,46 @@
+/* Importações em Geral */
+
+/* Reset do CSS */
+@import url('./_reset.css');
+
+/* Aplicações em todos os locais */
+@import url('./global.css');
+
+/* Stylesheet e Temas */
+@import url('./_stylesheet.css');
+@import url('./_screen.css');
+
+/* PFS - Pre Fabric Style */
+@import url('./_PFS.css');
+
+/* Componentes */
+@import url('../components/header/header.css');
+
+/* Styles */
+@import url('./sections/sec-banner.css');
+@import url('./sections/sec-sobre.css');
+@import url('./sections/sec-servico.css');
+@import url('./sections/sec-planos.css');
+@import url('./sections/sec-horarios.css');
+@import url('./sections/sec-social.css');
+
+/* Fonts */
+
+/* Importando fonts via web */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Uso de Fontes Locais */
+@font-face {
+  font-family: 'Local-Poppins';
+  src: url('./fonts/Poppins/Poppins.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Local-Audiowide';
+  src: url('./fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

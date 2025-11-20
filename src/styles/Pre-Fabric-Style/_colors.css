@@ -1,0 +1,53 @@
+/* Only Texts */
+
+/* Cores Padrões */
+.text-white   { color: #ffffff; }
+.text-black   { color: #000000; }
+.text-red     { color: #ff0000; }
+.text-green   { color: #00ff00; }
+.text-blue    { color: #0000ff; }
+.text-yellow  { color: #ffff00; }
+.text-magenta { color: #ff00ff; }
+.text-cyan    { color: #00ffff; }
+
+/* Cores Neutras */
+.text-light-100 { color: var(--cl-light-100); }
+.text-light-100 { color: var(--cl-light-100); }
+.text-dark-100 { color: var(--cl-dark-100); }
+.text-dark-200 { color: var(--cl-dark-200); }
+.text-neutral-100 { color: var(--cl-neutral-100); }
+.text-neutral-200 { color: var(--cl-neutral-200); }
+.text-neutral-300 { color: var(--cl-neutral-300); }
+
+/* Cores Bases */
+.text-primary-100 { color: var(--cl-primary-100); }
+.text-primary-200 { color: var(--cl-primary-200); }
+.text-primary-300 { color: var(--cl-primary-300); }
+.text-secondary-100 { color: var(--cl-secondary-100); }
+.text-secondary-200 { color: var(--cl-secondary-200); }
+.text-secondary-300 { color: var(--cl-secondary-300); }
+.text-tertiary-100 { color: var(--cl-tertiary-100); }
+.text-tertiary-200 { color: var(--cl-tertiary-200); }
+.text-tertiary-300 { color: var(--cl-tertiary-300); }
+
+/* Cores Utilidades */
+.text-success-100 { color: var(--cl-success-100); }
+.text-success-200 { color: var(--cl-success-200); }
+.text-success-300 { color: var(--cl-success-300); }
+.text-danger-100 { color: var(--cl-danger-100); }
+.text-danger-200 { color: var(--cl-danger-200); }
+.text-danger-300 { color: var(--cl-danger-300); }
+.text-warning-100 { color: var(--cl-warning-100); }
+.text-warning-200 { color: var(--cl-warning-200); }
+.text-warning-300 { color: var(--cl-warning-300); }
+
+/* Cores Transparentes */
+.text-light-tr { color: var(--cl-light-tr); }
+.text-dark-tr { color: var(--cl-dark-tr); }
+.text-neutral-tr { color: var(--cl-neutral-tr); }
+.text-primary-tr { color: var(--cl-primary-tr); }
+.text-secondary-tr { color: var(--cl-secondary-tr); }
+.text-tertiary-tr { color: var(--cl-tertiary-tr); }
+.text-success-tr { color: var(--cl-success-tr); }
+.text-danger-tr { color: var(--cl-danger-tr); }
+.text-warning-tr { color: var(--cl-warning-tr); }

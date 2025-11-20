@@ -1,0 +1,129 @@
+/* === Pre Customs and Default Borders */
+
+/* For default, "border" is not recomended to use. So, the red is too alert */
+.border { border-width: 2px; border-color: #ff0000; }
+
+/* Pre Customs */
+.border-use-1 { border-color: var(--cl-primary-200); border-width: 0.2em; border-style: solid; }
+.border-use-2 { border-color: var(--cl-secondary-200); border-width: 0.2em; border-style: solid; }
+.border-use-3 { border-color: var(--cl-tertiary-200); border-width: 0.2em; border-style: solid; }
+.border-use-neutral { border-color: var(--cl-neutral-200); border-width: 0.2em; border-style: solid; }
+.border-use-th-1 { border-color: var(--th-bg-2); border-width: 0.2em; border-style: solid; }
+.border-use-th-2 { border-color: var(--th-bg-1); border-width: 0.2em; border-style: solid; }
+
+/* === Borders Width */
+.border-1 { border-width: var(--thick-1); }
+.border-2 { border-width: var(--thick-2); }
+.border-3 { border-width: var(--thick-3); }
+.border-4 { border-width: var(--thick-4); }
+.border-5 { border-width: var(--thick-5); }
+.border-6 { border-width: var(--thick-6); }
+
+/* === Borders Styles */
+.border-solid  { border-style: solid;  }
+.border-dashed { border-style: dashed; }
+.border-dotted { border-style: dotted; }
+.border-groove { border-style: groove; }
+.border-ridge  { border-style: ridge;  }
+.border-inset  { border-style: inset;  }
+.border-outset { border-style: outset; }
+.border-hidden { border-style: hidden; }
+
+/* === Borders Colors */
+.border-primary-100   { border-color: var(--cl-primary-100);   }
+.border-primary-200   { border-color: var(--cl-primary-200);   }
+.border-primary-300   { border-color: var(--cl-primary-300);   }
+.border-secondary-100 { border-color: var(--cl-secondary-100); }
+.border-secondary-200 { border-color: var(--cl-secondary-200); }
+.border-secondary-300 { border-color: var(--cl-secondary-300); }
+.border-tertiary-100  { border-color: var(--cl-tertiary-100);  }
+.border-tertiary-200  { border-color: var(--cl-tertiary-200);  }
+.border-tertiary-300  { border-color: var(--cl-tertiary-300);  }
+.border-light-100     { border-color: var(--cl-light-100);     }
+.border-light-200     { border-color: var(--cl-light-200);     }
+.border-dark-100      { border-color: var(--cl-dark-100);      }
+.border-dark-200      { border-color: var(--cl-dark-200);      }
+.border-bg-1          { border-color: var(--th-bg-1);          }
+.border-bg-2          { border-color: var(--th-bg-2);          }
+
+/* No Border */
+.border-none { border: none; }
+.border-0    { border: none; }
+
+/* === Rounded Borders === */
+.rounded-none { border-radius: 0; }
+.rounded-sm   { border-radius: var(--rounded-1); }
+.rounded-md   { border-radius: var(--rounded-2); }
+.rounded-lg   { border-radius: var(--rounded-3); }
+.rounded-xl   { border-radius: var(--rounded-4); }
+.rounded-full { border-radius: 50%; }
+
+/* === Rounded Corners Borders -> Top Left  === */
+.rounded-cor-tl-sm   { border-radius: var(--rounded-1) 0 0 0; }
+.rounded-cor-tl-md   { border-radius: var(--rounded-2) 0 0 0; }
+.rounded-cor-tl-lg   { border-radius: var(--rounded-3) 0 0 0; }
+.rounded-cor-tl-xl   { border-radius: var(--rounded-4) 0 0 0; }
+.rounded-cor-tl-full { border-radius: 50% 0 0 0; }
+
+/* === Rounded Corners Borders -> Top Right  === */
+.rounded-cor-tr-sm   { border-radius: 0 var(--rounded-1) 0 0; }
+.rounded-cor-tr-md   { border-radius: 0 var(--rounded-2) 0 0; }
+.rounded-cor-tr-lg   { border-radius: 0 var(--rounded-3) 0 0; }
+.rounded-cor-tr-xl   { border-radius: 0 var(--rounded-4) 0 0; }
+.rounded-cor-tr-full { border-radius: 0 50% 0 0; }
+
+/* === Rounded Corners Borders -> Bottom Left  === */
+.rounded-cor-bl-sm   { border-radius: 0 0 0 var(--rounded-1); }
+.rounded-cor-bl-md   { border-radius: 0 0 0 var(--rounded-2); }
+.rounded-cor-bl-lg   { border-radius: 0 0 0 var(--rounded-3); }
+.rounded-cor-bl-xl   { border-radius: 0 0 0 var(--rounded-4); }
+.rounded-cor-bl-full { border-radius: 0 0 0 50%; }
+
+/* === Rounded Corners Borders -> Bottom Right  === */
+.rounded-cor-br-sm   { border-radius: 0 0 var(--rounded-1) 0; }
+.rounded-cor-br-md   { border-radius: 0 0 var(--rounded-2) 0; }
+.rounded-cor-br-lg   { border-radius: 0 0 var(--rounded-3) 0; }
+.rounded-cor-br-xl   { border-radius: 0 0 var(--rounded-4) 0; }
+.rounded-cor-br-full { border-radius: 0 0 50% 0; }
+
+/* === Rounded Corners Borders -> Top  === */
+.rounded-cor-t-sm   { border-radius: var(--rounded-1) var(--rounded-1) 0 0; }
+.rounded-cor-t-md   { border-radius: var(--rounded-2) var(--rounded-2) 0 0; }
+.rounded-cor-t-lg   { border-radius: var(--rounded-3) var(--rounded-3) 0 0; }
+.rounded-cor-t-xl   { border-radius: var(--rounded-4) var(--rounded-4) 0 0; }
+.rounded-cor-t-full { border-radius: 50% 50% 0 0; }
+
+/* === Rounded Corners Borders -> Bottom  === */
+.rounded-cor-b-sm   { border-radius: 0 0 var(--rounded-1) var(--rounded-1); }
+.rounded-cor-b-md   { border-radius: 0 0 var(--rounded-2) var(--rounded-2); }
+.rounded-cor-b-lg   { border-radius: 0 0 var(--rounded-3) var(--rounded-3); }
+.rounded-cor-b-xl   { border-radius: 0 0 var(--rounded-4) var(--rounded-4); }
+.rounded-cor-b-full { border-radius: 0 0 50% 50%; }
+
+/* === Rounded Corners Borders -> Left  === */
+.rounded-cor-l-sm   { border-radius: var(--rounded-1) 0 0 var(--rounded-1); }
+.rounded-cor-l-md   { border-radius: var(--rounded-2) 0 0 var(--rounded-2); }
+.rounded-cor-l-lg   { border-radius: var(--rounded-3) 0 0 var(--rounded-3); }
+.rounded-cor-l-xl   { border-radius: var(--rounded-4) 0 0 var(--rounded-4); }
+.rounded-cor-l-full { border-radius: 50% 0 0 50%; }
+
+/* === Rounded Corners Borders -> Right  === */
+.rounded-cor-r-sm   { border-radius: 0 var(--rounded-1) var(--rounded-1) 0; }
+.rounded-cor-r-md   { border-radius: 0 var(--rounded-2) var(--rounded-2) 0; }
+.rounded-cor-r-lg   { border-radius: 0 var(--rounded-3) var(--rounded-3) 0; }
+.rounded-cor-r-xl   { border-radius: 0 var(--rounded-4) var(--rounded-4) 0; }
+.rounded-cor-r-full { border-radius: 0 50% 50% 0; }
+
+/* === Rounded Corners Borders -> Diagonal Left to Right "\"  === */
+.rounded-cor-dlr-sm   { border-radius: var(--rounded-1) 0; }
+.rounded-cor-dlr-md   { border-radius: var(--rounded-2) 0; }
+.rounded-cor-dlr-lg   { border-radius: var(--rounded-3) 0; }
+.rounded-cor-dlr-xl   { border-radius: var(--rounded-4) 0; }
+.rounded-cor-dlr-full { border-radius: 50% 0; }
+
+/* === Rounded Corners Borders -> Diagonal Right to Left "/"  === */
+.rounded-cor-drl-sm   { border-radius: 0 var(--rounded-1); }
+.rounded-cor-drl-md   { border-radius: 0 var(--rounded-2); }
+.rounded-cor-drl-lg   { border-radius: 0 var(--rounded-3); }
+.rounded-cor-drl-xl   { border-radius: 0 var(--rounded-4); }
+.rounded-cor-drl-full { border-radius: 0 50%; }

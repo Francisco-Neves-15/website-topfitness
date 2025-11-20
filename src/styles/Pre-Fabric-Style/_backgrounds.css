@@ -1,0 +1,43 @@
+/* Only backgrounds */
+
+/* Cores Neutras */
+.bg-light-100 { background-color: var(--cl-light-100); }
+.bg-light-200 { background-color: var(--cl-light-200); }
+.bg-dark-100 { background-color: var(--cl-dark-100); }
+.bg-dark-200 { background-color: var(--cl-dark-200); }
+.bg-neutral-100 { background-color: var(--cl-neutral-100); }
+.bg-neutral-200 { background-color: var(--cl-neutral-200); }
+.bg-neutral-300 { background-color: var(--cl-neutral-300); }
+
+/* Cores Bases */
+.bg-primary-100 { background-color: var(--cl-primary-100); }
+.bg-primary-200 { background-color: var(--cl-primary-200); }
+.bg-primary-300 { background-color: var(--cl-primary-300); }
+.bg-secondary-100 { background-color: var(--cl-secondary-100); }
+.bg-secondary-200 { background-color: var(--cl-secondary-200); }
+.bg-secondary-300 { background-color: var(--cl-secondary-300); }
+.bg-tertiary-100 { background-color: var(--cl-tertiary-100); }
+.bg-tertiary-200 { background-color: var(--cl-tertiary-200); }
+.bg-tertiary-300 { background-color: var(--cl-tertiary-300); }
+
+/* Cores Utilidades */
+.bg-success-100 { background-color: var(--cl-success-100); }
+.bg-success-200 { background-color: var(--cl-success-200); }
+.bg-success-300 { background-color: var(--cl-success-300); }
+.bg-danger-100 { background-color: var(--cl-danger-100); }
+.bg-danger-200 { background-color: var(--cl-danger-200); }
+.bg-danger-300 { background-color: var(--cl-danger-300); }
+.bg-warning-100 { background-color: var(--cl-warning-100); }
+.bg-warning-200 { background-color: var(--cl-warning-200); }
+.bg-warning-300 { background-color: var(--cl-warning-300); }
+
+/* Cores Transparentes */
+.bg-light-tr { background-color: var(--cl-light-tr); }
+.bg-dark-tr { background-color: var(--cl-dark-tr); }
+.bg-neutral-tr { background-color: var(--cl-neutral-tr); }
+.bg-primary-tr { background-color: var(--cl-primary-tr); }
+.bg-secondary-tr { background-color: var(--cl-secondary-tr); }
+.bg-tertiary-tr { background-color: var(--cl-tertiary-tr); }
+.bg-success-tr { background-color: var(--cl-success-tr); }
+.bg-danger-tr { background-color: var(--cl-danger-tr); }
+.bg-warning-tr { background-color: var(--cl-warning-tr); }

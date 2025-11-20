@@ -1,0 +1,224 @@
+/* Sizes ============================================================ */
+
+/* Heights - Full Views */
+
+.vh-full  { height: 100vh;  }
+.lvh-full { height: 100lvh; }
+.svh-full { height: 100svh; }
+.dvh-full { height: 100dvh; }
+
+/* Heights - Fixeds */
+
+.w-full   { height: 100%; }
+.w-half   { height: 50%;  }
+.w-double { height: 200%; }
+
+/* Heights - Based in Sizes */
+
+.w-0  { height: var(--size-0);  }
+.w-1  { height: var(--size-1);  }
+.w-2  { height: var(--size-2);  }
+.w-3  { height: var(--size-3);  }
+.w-4  { height: var(--size-4);  }
+.w-5  { height: var(--size-5);  }
+.w-6  { height: var(--size-6);  }
+.w-7  { height: var(--size-7);  }
+.w-8  { height: var(--size-8);  }
+.w-9  { height: var(--size-9);  }
+.w-10 { height: var(--size-10); }
+.w-11 { height: var(--size-11); }
+.w-12 { height: var(--size-12); }
+.w-13 { height: var(--size-13); }
+.w-14 { height: var(--size-14); }
+.w-15 { height: var(--size-15); }
+.w-16 { height: var(--size-16); }
+.w-17 { height: var(--size-17); }
+.w-18 { height: var(--size-18); }
+.w-19 { height: var(--size-19); }
+.w-20 { height: var(--size-20); }
+.w-21 { height: var(--size-21); }
+.w-22 { height: var(--size-22); }
+.w-23 { height: var(--size-23); }
+.w-24 { height: var(--size-24); }
+.w-25 { height: var(--size-25); }
+.w-26 { height: var(--size-26); }
+.w-27 { height: var(--size-27); }
+.w-28 { height: var(--size-28); }
+.w-29 { height: var(--size-29); }
+.w-30 { height: var(--size-30); }
+.w-31 { height: var(--size-31); }
+.w-32 { height: var(--size-32); }
+
+/* Heights - % */
+
+.w-porc-0   { height: 0%;   }
+.w-porc-5   { height: 5%;   }
+.w-porc-10  { height: 10%;  }
+.w-porc-15  { height: 15%;  }
+.w-porc-20  { height: 20%;  }
+.w-porc-25  { height: 25%;  }
+.w-porc-30  { height: 30%;  }
+.w-porc-35  { height: 35%;  }
+.w-porc-40  { height: 40%;  }
+.w-porc-45  { height: 45%;  }
+.w-porc-50  { height: 50%;  }
+.w-porc-55  { height: 55%;  }
+.w-porc-60  { height: 60%;  }
+.w-porc-65  { height: 65%;  }
+.w-porc-70  { height: 70%;  }
+.w-porc-75  { height: 75%;  }
+.w-porc-80  { height: 80%;  }
+.w-porc-85  { height: 85%;  }
+.w-porc-90  { height: 90%;  }
+.w-porc-95  { height: 95%;  }
+.w-porc-100 { height: 100%; }
+
+/* Min Sizes ============================================================ */
+
+/* Min heights - Full Views */
+
+.min-vh-full  { min-height: 100vh;  }
+.min-lvh-full { min-height: 100lvh; }
+.min-svh-full { min-height: 100svh; }
+.min-dvh-full { min-height: 100dvh; }
+
+/* Min Heights - Fixeds */
+
+.min-w-full   { min-height: 100%; }
+.min-w-half   { min-height: 50%;  }
+.min-w-double { min-height: 200%; }
+
+/* Min Heights - Based in Sizes */
+
+.min-w-0  { min-height: var(--size-0);  }
+.min-w-1  { min-height: var(--size-1);  }
+.min-w-2  { min-height: var(--size-2);  }
+.min-w-3  { min-height: var(--size-3);  }
+.min-w-4  { min-height: var(--size-4);  }
+.min-w-5  { min-height: var(--size-5);  }
+.min-w-6  { min-height: var(--size-6);  }
+.min-w-7  { min-height: var(--size-7);  }
+.min-w-8  { min-height: var(--size-8);  }
+.min-w-9  { min-height: var(--size-9);  }
+.min-w-10 { min-height: var(--size-10); }
+.min-w-11 { min-height: var(--size-11); }
+.min-w-12 { min-height: var(--size-12); }
+.min-w-13 { min-height: var(--size-13); }
+.min-w-14 { min-height: var(--size-14); }
+.min-w-15 { min-height: var(--size-15); }
+.min-w-16 { min-height: var(--size-16); }
+.min-w-17 { min-height: var(--size-17); }
+.min-w-18 { min-height: var(--size-18); }
+.min-w-19 { min-height: var(--size-19); }
+.min-w-20 { min-height: var(--size-20); }
+.min-w-21 { min-height: var(--size-21); }
+.min-w-22 { min-height: var(--size-22); }
+.min-w-23 { min-height: var(--size-23); }
+.min-w-24 { min-height: var(--size-24); }
+.min-w-25 { min-height: var(--size-25); }
+.min-w-26 { min-height: var(--size-26); }
+.min-w-27 { min-height: var(--size-27); }
+.min-w-28 { min-height: var(--size-28); }
+.min-w-29 { min-height: var(--size-29); }
+.min-w-30 { min-height: var(--size-30); }
+.min-w-31 { min-height: var(--size-31); }
+.min-w-32 { min-height: var(--size-32); }
+
+/* Min Heights - % */
+
+.min-w-porc-0   { min-height: 0%;   }
+.min-w-porc-5   { min-height: 5%;   }
+.min-w-porc-10  { min-height: 10%;  }
+.min-w-porc-15  { min-height: 15%;  }
+.min-w-porc-20  { min-height: 20%;  }
+.min-w-porc-25  { min-height: 25%;  }
+.min-w-porc-30  { min-height: 30%;  }
+.min-w-porc-35  { min-height: 35%;  }
+.min-w-porc-40  { min-height: 40%;  }
+.min-w-porc-45  { min-height: 45%;  }
+.min-w-porc-50  { min-height: 50%;  }
+.min-w-porc-55  { min-height: 55%;  }
+.min-w-porc-60  { min-height: 60%;  }
+.min-w-porc-65  { min-height: 65%;  }
+.min-w-porc-70  { min-height: 70%;  }
+.min-w-porc-75  { min-height: 75%;  }
+.min-w-porc-80  { min-height: 80%;  }
+.min-w-porc-85  { min-height: 85%;  }
+.min-w-porc-90  { min-height: 90%;  }
+.min-w-porc-95  { min-height: 95%;  }
+.min-w-porc-100 { min-height: 100%; }
+
+/* Max Sizes ============================================================ */
+
+/* Max Heights - Full Views */
+
+.max-vh-full  { max-height: 100vh;  }
+.max-lvh-full { max-height: 100lvh; }
+.max-svh-full { max-height: 100svh; }
+.max-dvh-full { max-height: 100dvh; }
+
+/* Max Heights - Fixeds */
+
+.max-w-full   { max-height: 100%; }
+.max-w-half   { max-height: 50%;  }
+.max-w-double { max-height: 200%; }
+
+/* Max Heights - Based in Sizes */
+
+.max-w-0  { max-height: var(--size-0);  }
+.max-w-1  { max-height: var(--size-1);  }
+.max-w-2  { max-height: var(--size-2);  }
+.max-w-3  { max-height: var(--size-3);  }
+.max-w-4  { max-height: var(--size-4);  }
+.max-w-5  { max-height: var(--size-5);  }
+.max-w-6  { max-height: var(--size-6);  }
+.max-w-7  { max-height: var(--size-7);  }
+.max-w-8  { max-height: var(--size-8);  }
+.max-w-9  { max-height: var(--size-9);  }
+.max-w-10 { max-height: var(--size-10); }
+.max-w-11 { max-height: var(--size-11); }
+.max-w-12 { max-height: var(--size-12); }
+.max-w-13 { max-height: var(--size-13); }
+.max-w-14 { max-height: var(--size-14); }
+.max-w-15 { max-height: var(--size-15); }
+.max-w-16 { max-height: var(--size-16); }
+.max-w-17 { max-height: var(--size-17); }
+.max-w-18 { max-height: var(--size-18); }
+.max-w-19 { max-height: var(--size-19); }
+.max-w-20 { max-height: var(--size-20); }
+.max-w-21 { max-height: var(--size-21); }
+.max-w-22 { max-height: var(--size-22); }
+.max-w-23 { max-height: var(--size-23); }
+.max-w-24 { max-height: var(--size-24); }
+.max-w-25 { max-height: var(--size-25); }
+.max-w-26 { max-height: var(--size-26); }
+.max-w-27 { max-height: var(--size-27); }
+.max-w-28 { max-height: var(--size-28); }
+.max-w-29 { max-height: var(--size-29); }
+.max-w-30 { max-height: var(--size-30); }
+.max-w-31 { max-height: var(--size-31); }
+.max-w-32 { max-height: var(--size-32); }
+
+/* Max Heights - % */
+
+.max-w-porc-0   { max-height: 0%;   }
+.max-w-porc-5   { max-height: 5%;   }
+.max-w-porc-10  { max-height: 10%;  }
+.max-w-porc-15  { max-height: 15%;  }
+.max-w-porc-20  { max-height: 20%;  }
+.max-w-porc-25  { max-height: 25%;  }
+.max-w-porc-30  { max-height: 30%;  }
+.max-w-porc-35  { max-height: 35%;  }
+.max-w-porc-40  { max-height: 40%;  }
+.max-w-porc-45  { max-height: 45%;  }
+.max-w-porc-50  { max-height: 50%;  }
+.max-w-porc-55  { max-height: 55%;  }
+.max-w-porc-60  { max-height: 60%;  }
+.max-w-porc-65  { max-height: 65%;  }
+.max-w-porc-70  { max-height: 70%;  }
+.max-w-porc-75  { max-height: 75%;  }
+.max-w-porc-80  { max-height: 80%;  }
+.max-w-porc-85  { max-height: 85%;  }
+.max-w-porc-90  { max-height: 90%;  }
+.max-w-porc-95  { max-height: 95%;  }
+.max-w-porc-100 { max-height: 100%; }

@@ -1,0 +1,121 @@
+/* === Typography === */
+
+/* ===== TEXT */
+
+/* Text Size */
+.text-xm   { font-size: var(--font-xm);   }
+.text-sm   { font-size: var(--font-sm);   }
+.text-base { font-size: var(--font-base); } 
+.text-md   { font-size: var(--font-md);   }
+.text-lg   { font-size: var(--font-lg);   }
+.text-xl   { font-size: var(--font-xl);   }
+.text-2xl  { font-size: var(--font-2xl);  }
+.text-3xl  { font-size: var(--font-3xl);  }
+.text-4xl  { font-size: var(--font-4xl);  }
+.text-5xl  { font-size: var(--font-5xl);  }
+
+/* Text align */
+.text-center  { text-align: center;  }
+.text-left    { text-align: left;    }
+.text-right   { text-align: right;   }
+.text-justify { text-align: justify; }
+
+/* Text Decoration */
+.text-none         { text-decoration: none;         }
+.text-overline     { text-decoration: overline;     }
+.text-line-through { text-decoration: line-through; }
+.text-underline    { text-decoration: underline;    }
+
+/* Text Transform */
+.text-capitalize { text-transform: capitalize; }
+.text-lowercase  { text-transform: lowercase; }
+.text-uppercase  { text-transform: uppercase; }
+
+/* Text Overflows */
+.text-ellipsis { text-overflow: ellipsis; }
+.text-clip     { text-overflow: clip;     }
+.text-truncate { text-overflow: ellipsis; overflow: hidden; }
+
+/* Text Orientation */
+.text-upright { text-orientation: upright;              }
+.text-sideways { text-orientation: sideways;            }
+.text-sidewaysright { text-orientation: sideways-right; }
+
+/* Text Indent */
+.text-indent-1 { text-indent: var(--font-base); }
+.text-indent-2 { text-indent: var(--font-2xl);  }
+.text-indent-3 { text-indent: var(--font-3xl);  }
+.text-indent-4 { text-indent: var(--font-4xl);  }
+.text-indent-5 { text-indent: var(--font-5xl);  }
+
+/* ===== FONTS */
+
+/* Font Weight */
+.font-thin        { font-weight: 100; }
+.font-extra-light { font-weight: 200; }
+.font-light       { font-weight: 300; }
+.font-normal      { font-weight: 400; }
+.font-medium      { font-weight: 500; }
+.font-semi-bold   { font-weight: 600; }
+.font-bold        { font-weight: 700; }
+.font-extra-bold  { font-weight: 800; }
+.font-black       { font-weight: 900; }
+
+/* Font Style */
+.font-normal  { font-style: normal;  }
+.font-italic  { font-style: italic;  }
+.font-oblique { font-style: oblique; }
+
+/* ===== LETTER */
+
+/* Letter Spacing */
+.letter-spacing-1  { letter-spacing: var(--space-1);  }
+.letter-spacing-2  { letter-spacing: var(--space-2);  }
+.letter-spacing-3  { letter-spacing: var(--space-3);  }
+.letter-spacing-4  { letter-spacing: var(--space-4);  }
+.letter-spacing-5  { letter-spacing: var(--space-5);  }
+.letter-spacing-6  { letter-spacing: var(--space-6);  }
+.letter-spacing-7  { letter-spacing: var(--space-7);  }
+.letter-spacing-8  { letter-spacing: var(--space-8);  }
+.letter-spacing-9  { letter-spacing: var(--space-9);  }
+.letter-spacing-10 { letter-spacing: var(--space-10); }
+.letter-spacing-11 { letter-spacing: var(--space-11); }
+.letter-spacing-12 { letter-spacing: var(--space-12); }
+.letter-spacing-13 { letter-spacing: var(--space-13); }
+.letter-spacing-14 { letter-spacing: var(--space-14); }
+.letter-spacing-15 { letter-spacing: var(--space-15); }
+.letter-spacing-16 { letter-spacing: var(--space-16); }
+.letter-spacing-17 { letter-spacing: var(--space-17); }
+.letter-spacing-18 { letter-spacing: var(--space-18); }
+.letter-spacing-19 { letter-spacing: var(--space-19); }
+.letter-spacing-20 { letter-spacing: var(--space-20); }
+.letter-spacing-21 { letter-spacing: var(--space-21); }
+.letter-spacing-22 { letter-spacing: var(--space-22); }
+.letter-spacing-23 { letter-spacing: var(--space-23); }
+.letter-spacing-24 { letter-spacing: var(--space-24); }
+
+/* Negative Letter Spacing */
+.-letter-spacing-1  { letter-spacing: calc(var(--space-1) * -1);  }
+.-letter-spacing-2  { letter-spacing: calc(var(--space-2) * -1);  }
+.-letter-spacing-3  { letter-spacing: calc(var(--space-3) * -1);  }
+.-letter-spacing-4  { letter-spacing: calc(var(--space-4) * -1);  }
+.-letter-spacing-5  { letter-spacing: calc(var(--space-5) * -1);  }
+.-letter-spacing-6  { letter-spacing: calc(var(--space-6) * -1);  }
+.-letter-spacing-7  { letter-spacing: calc(var(--space-7) * -1);  }
+.-letter-spacing-8  { letter-spacing: calc(var(--space-8) * -1);  }
+.-letter-spacing-9  { letter-spacing: calc(var(--space-9) * -1);  }
+.-letter-spacing-10 { letter-spacing: calc(var(--space-10) * -1); }
+.-letter-spacing-11 { letter-spacing: calc(var(--space-11) * -1); }
+.-letter-spacing-12 { letter-spacing: calc(var(--space-12) * -1); }
+.-letter-spacing-13 { letter-spacing: calc(var(--space-13) * -1); }
+.-letter-spacing-14 { letter-spacing: calc(var(--space-14) * -1); }
+.-letter-spacing-15 { letter-spacing: calc(var(--space-15) * -1); }
+.-letter-spacing-16 { letter-spacing: calc(var(--space-16) * -1); }
+.-letter-spacing-17 { letter-spacing: calc(var(--space-17) * -1); }
+.-letter-spacing-18 { letter-spacing: calc(var(--space-18) * -1); }
+.-letter-spacing-19 { letter-spacing: calc(var(--space-19) * -1); }
+.-letter-spacing-20 { letter-spacing: calc(var(--space-20) * -1); }
+.-letter-spacing-21 { letter-spacing: calc(var(--space-21) * -1); }
+.-letter-spacing-22 { letter-spacing: calc(var(--space-22) * -1); }
+.-letter-spacing-23 { letter-spacing: calc(var(--space-23) * -1); }
+.-letter-spacing-24 { letter-spacing: calc(var(--space-24) * -1); }

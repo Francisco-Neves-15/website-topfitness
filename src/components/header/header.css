@@ -1,0 +1,31 @@
+#header-container {
+  background-color: inherit;
+  height: 40px;
+  overflow: hidden;
+  display: none;
+}
+
+.main-header {
+
+}
+
+.logo-area {
+
+}
+
+.logo-expanded {
+
+}
+
+.logo-compact {
+
+}
+
+[data-device="small"] .logo-expanded { display: none; }
+[data-device="small"] .logo-compact { display: flex; }
+[data-device="medium"] .logo-expanded { display: none; }
+[data-device="medium"] .logo-compact { display: flex; }
+[data-device="large"] .logo-expanded { display: flex; }
+[data-device="large"] .logo-compact { display: none; }
+
+
