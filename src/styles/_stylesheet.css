@@ -39,7 +39,8 @@
   --cl-danger-tr: #F5241780;
   --cl-warning-tr: #F4E40080;
   /* Overlays */
-  --cl-overlay-50: #00000080;
+  --cl-overlay-50: rgba(0, 0, 0, 0.5);
+  --cl-overlay-75: rgba(0, 0, 0, 0.75);
   /* Selection */
   --cl-selection-bg: rgb(244, 116, 38, 0.75);
   --cl-selection-text: #F4F4F4;
@@ -53,7 +54,7 @@
 /* === Tema Claro === */
 [data-theme="light"] {
   --th-bg-1: var(--cl-light-100);
-  --th-bg-2: var(--cl-light-200);
+  --th-bg-2: var(--cl-dark-100);
   --th-text-1: var(--cl-dark-100);
   --th-text-2: var(--cl-light-100);
   --th-text-f: var(--cl-neutral-300);
@@ -68,7 +69,7 @@
 /* === Tema Escuro === */
 [data-theme="dark"] {
   --th-bg-1: var(--cl-dark-100);
-  --th-bg-2: var(--cl-dark-200);
+  --th-bg-2: var(--cl-light-100);
   --th-text-1: var(--cl-light-100);
   --th-text-2: var(--cl-dark-100);
   --th-text-f: var(--cl-neutral-100);

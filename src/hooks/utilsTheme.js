@@ -1,5 +1,19 @@
-const AVAILABLE_THEMES = ["light", "dark", "solarized", "dracula"];
-const FALLBACK_THEME = "light";
+import fetchJsonFile from "../util/fetchJsonFile.js";
+
+let AVAILABLE_THEMES
+let FALLBACK_THEME
+
+export async function initTheme() {
+  const configs = await fetchJsonFile("configs");
+  
+  const themeConfigs = configs && configs.theme ? configs.theme : null;
+  if (!themeConfigs) throw new Error('configs.theme não encontrado');
+
+  AVAILABLE_THEMES = themeConfigs;
+  FALLBACK_THEME = "light";
+
+  toggleTheme("default", "initial");
+}
 
 export function toggleTheme(theme, type) {
   const html = document.documentElement;
@@ -16,21 +30,21 @@ export function toggleTheme(theme, type) {
   //   document.head.appendChild(linkTheme);
   // }
 
-  console.log(`LOG: *func: ToggleTheme | LS: ${localStorage.getItem(LS_KEY)}`);
+  // console.log(`LOG: *func: ToggleTheme | LS: ${localStorage.getItem(LS_KEY)}`);
 
   // Apply the theme
   function applyTheme(themeToApply) {
-    console.log(`LOG: *func: ApplyTheme | TH: ${themeToApply}`);
+    // console.log(`LOG: *func: ApplyTheme | TH: ${themeToApply}`);
     html.setAttribute('data-theme', themeToApply);
-    console.warn(`DEBUG: Theme applied -> ${themeToApply}`);
-    console.warn(`DEBUG: LS value -> ${localStorage.getItem(LS_KEY)}`);
+    // console.warn(`DEBUG: Theme applied -> ${themeToApply}`);
+    // console.warn(`DEBUG: LS value -> ${localStorage.getItem(LS_KEY)}`);
     // linkTheme.href = `./src/styles/theme/theme-${themeToApply}.css`;
   }
 
   // Detecte browser theme
   function detectSystemTheme() {
     const detected = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    console.warn(`DEBUG: *func: DetectSystemTheme | Detected system theme: ${detected}`);
+    // console.warn(`DEBUG: *func: DetectSystemTheme | Detected system theme: ${detected}`);
     return detected;
   }
 
@@ -43,8 +57,8 @@ export function toggleTheme(theme, type) {
     // -- In case not, search the theme system
     // -- If is not save, save in LS device or null
     if (type === 'initial') {
-      console.warn(`DEBUG: Initial theme load | Saved: ${saved}`);
-      if (AVAILABLE_THEMES.includes(saved)) return saved;
+      // console.warn(`DEBUG: Initial theme load | Saved: ${saved}`);
+      if (saved && AVAILABLE_THEMES[saved]) return saved;
       const systemTheme = detectSystemTheme();
       if (saved !== 'device') localStorage.setItem(LS_KEY, 'device');
       return systemTheme;
@@ -54,12 +68,12 @@ export function toggleTheme(theme, type) {
     // - If user select 'device', set on LS 'device';
     // - Else this, Save immediately on LS;
     if (type === 'userSelect') {
-      console.warn(`DEBUG: User selected theme: ${theme}`);
+      // console.warn(`DEBUG: User selected theme: ${theme}`);
       if (theme === 'device') {
         localStorage.setItem(LS_KEY, 'device');
         return detectSystemTheme();
       }
-      if (AVAILABLE_THEMES.includes(theme)) {
+      if (AVAILABLE_THEMES[theme]) {
         localStorage.setItem(LS_KEY, theme);
         return theme;
       }
@@ -68,7 +82,7 @@ export function toggleTheme(theme, type) {
     }
 
     // fallback
-    console.warn(`DEBUG: Fallback to system theme`);
+    // console.warn(`DEBUG: Fallback to system theme`);
     return detectSystemTheme();
   }
 
@@ -76,3 +90,6 @@ export function toggleTheme(theme, type) {
   const finalTheme = determineTheme();
   applyTheme(finalTheme);
 }
+
+// const meta = AVAILABLE_THEMES[finalTheme]; 
+// console.log(meta.name, meta.icon);

@@ -15,6 +15,8 @@
 
 /* Componentes */
 @import url('../components/header/header.css');
+@import url('../components/header/navbar.css');
+@import url('../components//header/config-menu/config-options.css');
 
 /* Styles */
 @import url('./sections/sec-banner.css');

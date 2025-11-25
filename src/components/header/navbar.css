@@ -1,0 +1,236 @@
+.navbar {
+  width: 100%;
+  height: 100%;
+  background-color: var(--th-bg-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: right 0.3s ease-in-out;
+}
+
+[data-layout="compact"] .navbar[aria-expanded="false"] {
+  right: -100%;
+  pointer-events: none;
+}
+[data-layout="compact"] .navbar[aria-expanded="true"] {
+  right: 0%;
+  pointer-events: all;
+}
+
+[data-device="small"] .navbar { 
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+[data-device="medium"] .navbar { 
+  padding: 0 0.75rem 0.75rem 0.75rem;
+}
+[data-device="large"] .navbar { 
+  padding: 0 1rem 1rem 1rem;
+}
+
+/* Navbar header */
+.navbar-header-all {
+  width: 100%;
+  min-height: var(--header-size);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Navbar Button */
+.btn-vejamais-navbar {
+  width: 360px;
+  font-size: 1.2rem;
+}
+
+.navbar-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.navbar-list li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar-list li span {
+  text-align: right;
+  color: var(--th-text-1);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Config Menu */
+
+.config-menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.config-menu .config-menu-i {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.config-menu .config-menu-i .btn-config-all {
+  width: auto;
+  height: 4rem;
+  background-color: transparent;
+  border-radius: 0.6rem;
+  border: none;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.config-menu .config-menu-i .btn-config-all span {
+  text-align: right;
+  color: var(--th-text-1);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.config-icon-current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 3rem;
+}
+
+/* ============================== More LAYOUT Compact */
+
+[data-device="small"][data-layout="compact"] .navbar .navbar-list {
+  padding-right: 0.5rem;
+}
+
+/* ============================== LAYOUT Expanded */
+
+/* Navbar List */
+[data-layout="compact"] #btn-navbarlist-open { 
+  display: none;
+}
+[data-layout="compact"] #btn-navbarlist-close { 
+  display: none;
+}
+[data-layout="expanded"] #btn-navbar-open { 
+  display: none;
+}
+[data-layout="expanded"] #btn-navbar-close { 
+  display: none;
+}
+
+[data-layout="expanded"] .navbar-header { 
+  display: none;
+}
+[data-layout="compact"] .navbarlist-header { 
+  display: none;
+}
+
+/* .navbar[aria-expanded="undefined"] { */
+[data-layout="expanded"] .navbar {
+  width: auto;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  transition: none;
+  overflow: visible;
+  position: relative;
+  padding: 0;
+}
+
+[data-layout="expanded"] .btn-vejamais-navbar {
+  width: auto;
+  font-size: 1rem;
+  text-wrap: nowrap;
+}
+
+[data-layout="expanded"] .config-menu {
+  width: auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0;
+}
+[data-layout="expanded"] .config-menu .config-menu-i {
+  width: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+[data-layout="expanded"] .config-menu .config-menu-i .btn-config-all {
+  height: auto;
+  padding: 0.4rem;
+  gap: 0;
+}
+[data-layout="expanded"] .config-menu .config-menu-i .btn-config-all span {
+  display: none;
+}
+
+[data-layout="expanded"] .config-icon-current.theme {
+  aspect-ratio: 1/1;
+  width: auto;
+}
+[data-layout="expanded"] .config-icon-current.lang {
+  width: auto;
+}
+
+/* Navbar list */
+
+[data-layout="expanded"] .navbar .navbar-list {
+  width: 15%;
+  max-width: 25%;
+  height: 100%;
+  background-color: var(--th-bg-1);
+  margin-top: 0;
+  position: fixed;
+  top: 0%;
+  right: 0;
+  transition: right 0.3s ease-in-out;
+}
+
+[data-device="medium"][data-layout="expanded"] .navbar .navbar-list {
+  padding-right: 0.75rem;
+}
+[data-device="large"][data-layout="expanded"] .navbar .navbar-list {
+  padding-right: 1rem;
+}
+
+[data-layout="expanded"] .navbar .navbar-list[aria-expanded="false"] {
+  right: -100%;
+  pointer-events: none;
+}
+[data-layout="expanded"] .navbar .navbar-list[aria-expanded="true"] {
+  right: 0%;
+  pointer-events: all;
+}
+
+[data-layout="expanded"] .navbar .navbar-list li span {
+  font-size: 1.2rem;
+}

@@ -8,7 +8,10 @@
 .position-sticky   { position: sticky;   }
 
 /* Z Index */
-.zindex-
+.zindex-hidden { z-index: -1; }
+.zindex-50 { z-index: 50; }
+.zindex-100 { z-index: 100; }
+.zindex-1000 { z-index: 1000; }
 
 /* Top */
 .top-0  { top: var(--space-0);  }

@@ -1,0 +1,119 @@
+<template id="header-template">
+  <div class="header-content">
+    <!-- Logo -->
+    <div class="logo-area">
+      <img id="logo-header-light" src="../../../public/assets/brand/logos/logo-comb-topfitness-light.png" alt="Logo TopFitness light">
+      <img id="logo-header-dark" src="../../../public/assets/brand/logos/logo-comb-topfitness-dark.png" alt="Logo TopFitness dark">
+    </div>
+    <!-- Menu -->
+    <div class="menu-area">
+      <button id="btn-navbar-open" class="btn-ghost btn-icon btn-navbar-toggle open">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </div>
+  <nav class="navbar" aria-expanded="false" id="navbar">
+    <div class="navbar-header-all navbar-header">
+      <button id="btn-navbar-close" class="btn-ghost btn-icon btn-navbar-toggle close">
+        <i class="bi bi-x-lg"></i>        
+      </button>
+    </div>
+    <button class="btn-primary btn-vejamais-navbar">Veja a TopFitness</button>
+    <ul class="navbar-list" aria-expanded="false" id="navbar-list">
+      <div class="navbar-header-all navbarlist-header">
+        <button id="btn-navbarlist-close" class="btn-ghost btn-icon btn-navbar-toggle navbarlist close">
+          <i class="bi bi-x-lg"></i>        
+        </button>
+      </div>
+      <li><span class="hvAnim hvFont bot right">Item 1</span></li>
+      <li><span class="hvAnim hvFont bot right">Item 2</span></li>
+      <li><span class="hvAnim hvFont bot right">Item 3</span></li>
+    </ul>
+    <ul class="config-menu">
+      <li id="config-menu-i-theme" class="config-menu-i">
+        <button data-popover="false" class="btn-ghost btn-config-all" id="btn-config-popover-theme">
+          <span>Tema</span>
+          <div class="navbar-config-icon config-icon-current theme">
+            <i data-current-icon="light" class="bi bi-brightness-high-fill icon-current-theme noSelected"></i>
+            <i data-current-icon="dark" class="bi bi-moon-fill icon-current-theme noSelected"></i>
+            <!-- <i data-current-icon="device" class="bi bi-display icon-current-theme selected"></i> -->
+            <i data-current-icon="device" class="bi bi-circle-half icon-current-theme selected"></i>
+          </div>
+        </button>
+        <div id="config-popover-theme" class="config-box theme">
+          <!-- <div class="config-box-top"></div> -->
+          <ul class="list-select-config" id="list-select-theme">
+            <button data-select="false" data-theme-value="device" class="i-select-theme btn-ghost btn-select-config navbar-config-icon">
+              <div class="config-box-check-area">
+                <i class="bi bi-check2"></i>
+              </div>
+              <span>Detectar</span>
+              <i class="bi bi-circle-half"></i>
+            </button>
+            <button data-select="false" data-theme-value="light" class="i-select-theme btn-ghost btn-select-config navbar-config-icon">
+              <div class="config-box-check-area">
+                <i class="bi bi-check2"></i>
+              </div>
+              <span>Claro</span>
+              <i class="bi bi-brightness-high-fill"></i>
+            </button>
+            <button data-select="false" data-theme-value="dark" class="i-select-theme btn-ghost btn-select-config navbar-config-icon">
+              <div class="config-box-check-area">
+                <i class="bi bi-check2"></i>
+              </div>
+              <span>Escuro</span>
+              <i class="bi bi-moon-fill"></i>
+            </button>
+          </ul>
+        </div>
+      </li>
+      <li id="config-menu-i-lang" class="config-menu-i">
+        <button data-popover="false" class="btn-ghost btn-config-all" id="btn-config-popover-lang">
+          <span>Idioma</span>
+          <div class="navbar-config-icon config-icon-current lang">
+            <img data-current-icon="pt-BR" class="icon-current-lang selected" style="max-height: 64px;" src="../../../public/assets/flags/br.png" alt="flag: pt-BR">
+            <img data-current-icon="en-US" class="icon-current-lang noSelected" style="max-height: 64px;" src="../../../public/assets/flags/us.png" alt="flag: en-US">
+            <img data-current-icon="fr-FR" class="icon-current-lang noSelected" style="max-height: 64px;" src="../../../public/assets/flags/fr.png" alt="flag: fr-FR">
+          </div>
+        </button>
+        <div id="config-popover-lang" class="config-box lang">
+          <!-- <div class="config-box-top"></div> -->
+          <ul class="list-select-config" id="list-select-lang">
+            <button data-select="false" data-lang-value="device" class="i-select-lang btn-ghost btn-select-config navbar-config-icon">
+              <div class="config-box-check-area">
+                <i class="bi bi-check2"></i>
+              </div>
+              <span>Detectar</span>
+              <i class="bi bi-search"></i>
+            </button>
+            <button data-select="false" data-lang-value="pt-BR" class="i-select-lang btn-ghost btn-select-config navbar-config-icon">
+              <div class="config-box-check-area">
+                <i class="bi bi-check2"></i>
+              </div>
+              <span>Português</span>
+              <img style="max-height: 64px;" src="../../../public/assets/flags/br.png" alt="flag: pt-BR">
+            </button>
+            <button data-select="false" data-lang-value="en-US" class="i-select-lang btn-ghost btn-select-config navbar-config-icon">
+              <div class="config-box-check-area">
+                <i class="bi bi-check2"></i>
+              </div>
+              <span>English</span>
+              <img style="max-height: 64px;" src="../../../public/assets/flags/us.png" alt="flag: en-US">
+            </button>
+            <button data-select="false" data-lang-value="fr-FR" class="i-select-lang btn-ghost btn-select-config navbar-config-icon">
+              <div class="config-box-check-area">
+                <i class="bi bi-check2"></i>
+              </div>
+              <span>Français</span>
+              <img style="max-height: 64px;" src="../../../public/assets/flags/fr.png" alt="flag: fr-FR">
+            </button>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <button id="btn-navbarlist-open" class="btn-ghost btn-icon btn-navbar-toggle navbarlist open">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="overlay overlay-header" id="overlay-header"></div>
+  </nav>
+</template>

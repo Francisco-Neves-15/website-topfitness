@@ -1,0 +1,54 @@
+.config-icon-current .selected { display: block;}
+.config-icon-current .noSelected { display: none; }
+
+.config-box {
+  display: none;
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--th-bg-1);
+  border: 2px solid var(--th-bg-2);
+  border-radius: 0.5rem;
+}
+.config-box.show {
+  display: block; 
+  z-index: 1001;
+}
+
+.list-select-config {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  min-width: 220px;
+}
+
+.btn-select-config {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.btn-select-config span {
+  font-size: 1rem;
+  color: var(--th-text-1);
+  font-weight: 700;
+}
+
+.config-box-check-area {
+  margin-right: auto;
+}
+.btn-select-config[data-select="true"] .config-box-check-area {
+  opacity: 1;
+}
+.btn-select-config[data-select="false"] .config-box-check-area {
+  opacity: 0;
+}

@@ -1,9 +1,9 @@
 // Load Header
-async function loadHeader() {
+export async function loadHeader() {
   const response = await fetch('./src/components/header/header.html');
   const html = await response.text();
 
-  const container = document.querySelector('#header-container');
+  const container = document.querySelector('#header');
   container.innerHTML = html;
 
   const template = container.querySelector('#header-template');
@@ -12,5 +12,3 @@ async function loadHeader() {
   container.innerHTML = '';
   container.appendChild(clone);
 }
-
-loadHeader()

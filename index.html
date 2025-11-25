@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-device="small" lang="pt-BR" data-theme="dark" dir="ltr" data-version="beta" data-page="home">  
+<html data-device="small" data-layout="compact" lang="pt-BR" data-theme="dark" dir="ltr" data-version="beta" data-page="home">  
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,11 +7,11 @@
   <meta name="keywords" content="TopFitness, Academia, Academia TopFitness, São José do Rio Preto">
   <meta name="author" content="Francisco-Neves">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>TopFitness | Home</title>
+  <title>TopFitness | Início</title>
   <link rel='stylesheet' type='text/css' media='screen' href='./src/styles/main.css'>
   <script defer type="module" src="./src/js/main.js"></script>
   <!-- Boot Strap Web Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <!-- Logo on Navigator Tab -->
   <link rel="icon" type="image/x-icon" href="./src/favicon.ico">
 </head>
@@ -19,7 +19,7 @@
   <!-- Skip Menu go to main content -->
   <a id="link-skip-main" tabindex="1" href="#main">Ir para o conteúdo principal</a>
   
-  <div id="header-container">header</div>
+  <header id="header"></header>
 
   <main id="main">
 
@@ -42,22 +42,9 @@
 
   </main>
 
-  <div id="footer-container">
-    <div>
-      <select name="select-theme" id="select-theme">
-        <option value="device">Detectar</option>
-        <option value="light">Claro</option>
-        <option value="dark">Escuro</option>
-      </select>
+  <footer id="footer-container">
 
-      <select name="select-lang" id="select-lang">
-        <option value="device">Detectar</option>
-        <option value="pt-BR">Português</option>
-        <option value="en-US">English</option>
-        <option value="fr-FR">Français</option>
-      </select>
-    </div>
-  </div>
+  </footer>
 
 </body>
 </html>
