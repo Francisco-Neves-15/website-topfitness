@@ -26,20 +26,30 @@ main {
 
 section {
   width: 100%;
+  padding: 1rem;
+}
+[data-device="small"] section {
+  padding: 1em 1em;
+}
+[data-device="medium"] section {
+  padding: 2em 2em;
+}
+[data-device="large"] section {
+  padding: 4em 4em;
 }
 
 h1 {
-  font-size: var(--font-3xl);
-  color: var(--th-text-1);
-}
-
-h2 {
   font-size: var(--font-2xl);
   color: var(--th-text-1);
 }
 
-h3 {
+h2 {
   font-size: var(--font-xl);
+  color: var(--th-text-1);
+}
+
+h3 {
+  font-size: var(--font-lg);
   color: var(--th-text-1);
 }
 
