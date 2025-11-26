@@ -14,9 +14,16 @@
 @import url('./_PFS.css');
 
 /* Componentes */
+/* Header */
 @import url('../components/header/header.css');
 @import url('../components/header/navbar.css');
 @import url('../components//header/config-menu/config-options.css');
+/* Footer */
+@import url('../components/footer/footer.css');
+@import url('../components/footer/footer-sec/footer-sec-social.css');
+@import url('../components/footer/footer-sec/footer-sec-copyright.css');
+@import url('../components/footer/footer-sec/footer-sec-address.css');
+@import url('../components/footer/footer-sec/footer-sec-devs.css');
 
 /* Styles */
 @import url('./sections/sec-banner.css');

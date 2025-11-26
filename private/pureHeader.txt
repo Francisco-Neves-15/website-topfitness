@@ -12,6 +12,7 @@
       </button>
     </div>
   </div>
+  <!-- Navbar -->
   <nav class="navbar" aria-expanded="false" id="navbar">
     <div class="navbar-header-all navbar-header">
       <button id="btn-navbar-close" class="btn-ghost btn-icon btn-navbar-toggle close">
@@ -25,9 +26,9 @@
           <i class="bi bi-x-lg"></i>        
         </button>
       </div>
-      <li><span class="hvAnim hvFont bot right">Item 1</span></li>
-      <li><span class="hvAnim hvFont bot right">Item 2</span></li>
-      <li><span class="hvAnim hvFont bot right">Item 3</span></li>
+      <li><span class="hvAnim hvFont bottom right">Item 1</span></li>
+      <li><span class="hvAnim hvFont bottom right">Item 2</span></li>
+      <li><span class="hvAnim hvFont bottom right">Item 3</span></li>
     </ul>
     <ul class="config-menu">
       <li id="config-menu-i-theme" class="config-menu-i">
@@ -114,6 +115,6 @@
     <button id="btn-navbarlist-open" class="btn-ghost btn-icon btn-navbar-toggle navbarlist open">
       <i class="bi bi-list"></i>
     </button>
-    <div class="overlay overlay-header" id="overlay-header"></div>
+    <div class="overlay overlay-navbar" id="overlay-navbar"></div>
   </nav>
 </template>

@@ -72,7 +72,7 @@ export async function initHeader() {
   btnNavbarList_Open = document.getElementById("btn-navbarlist-open");
   btnNavbarList_Close = document.getElementById("btn-navbarlist-close");
 
-  overlayHeader = document.getElementById("overlay-header");
+  overlayHeader = document.getElementById("overlay-navbar");
 
   // Verifica se os elementos existem antes de adicionar listeners
   if (btnNavbar_Open && btnNavbar_Close && btnNavbarList_Open && btnNavbarList_Close) {

@@ -12,3 +12,18 @@ export async function loadHeader() {
   container.innerHTML = '';
   container.appendChild(clone);
 }
+
+// Load Footer
+export async function loadFooter() {
+  const response = await fetch('./src/components/footer/footer.html');
+  const html = await response.text();
+
+  const container = document.querySelector('#footer');
+  container.innerHTML = html;
+
+  const template = container.querySelector('#footer-template');
+  const clone = document.importNode(template.content, true);
+
+  container.innerHTML = '';
+  container.appendChild(clone);
+}

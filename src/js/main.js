@@ -1,7 +1,6 @@
 // Imports de Scripts sempre usados
 import { initMedia } from "../hooks/media.js";
-import { loadHeader } from "./essentials.js";
-// import { toggleLang } from "./miscellaneous.js";
+import { loadHeader, loadFooter } from "./essentials.js";
 
 // Utils Functions
 import { initTheme, toggleTheme } from "../hooks/utilsTheme.js";
@@ -23,6 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       await loadHeader(); 
       await initHeader();
       await initConfigs();
+      await loadFooter(); 
     } catch (error) {
       console.error("Erro ao inicializar:", error);
     }

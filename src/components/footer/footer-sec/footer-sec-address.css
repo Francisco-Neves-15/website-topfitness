@@ -1,0 +1,9 @@
+.sec-footer.address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-footer.address span {
+  color: var(--th-text-1);
+  text-align: center;
+}

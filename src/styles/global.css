@@ -7,15 +7,28 @@ html {
 
 body {
   background-color: var(--th-bg-1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 body.noScroll {
   overflow: hidden;
+}
+[data-device="small"] body {
+  min-height: 100svh;
+}
+[data-device="medium"] body {
+  min-height: 100svh;
+}
+[data-device="large"] body {
+  min-height: 100dvh;
 }
 
 main {
   flex: 1;
   width: 100%;
-  min-height: 100dvh;
 }
 [data-device="small"] main {
   padding: 0.5em;
@@ -71,6 +84,9 @@ ul {
 
 button {
   font-family: 'Poppins';
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .btn-primary{
@@ -181,7 +197,7 @@ button {
 .hvAnim.top::before {
   top: 0;
 }
-.hvAnim.bot::before {
+.hvAnim.bottom::before {
   bottom: 0;
 }
 

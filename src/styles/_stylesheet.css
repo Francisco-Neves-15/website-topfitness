@@ -44,6 +44,14 @@
   /* Selection */
   --cl-selection-bg: rgb(244, 116, 38, 0.75);
   --cl-selection-text: #F4F4F4;
+  /* Social Colors */
+  --cl-facebook: #0866ff;
+  --cl-instagram1: #f9ce34;
+  --cl-instagram2: #ee2a7b;
+  --cl-instagram3: #6228d7;
+  --grad-instagram-webkit: -webkit-linear-gradient(135deg, var(--cl-instagram1) 0%, var(--cl-instagram2) 50%, var(--cl-instagram3) 100%);
+  --grad-instagram-moz: -moz-linear-gradient(135deg, var(--cl-instagram1) 0%, var(--cl-instagram2) 50%, var(--cl-instagram3) 100%);
+  --grad-instagram-base: linear-gradient(135deg, var(--cl-instagram1) 0%, var(--cl-instagram2) 50%, var(--cl-instagram3) 100%);
 }
 
 /* === Tema Padrão em caso de erro === */
