@@ -1,54 +1,94 @@
 .planos {
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .planos h2 {
-    color: #ff7a00;
-    margin-bottom: 25px;
+  color: #ff7a00;
+}
+
+.planos-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .plano-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.plano-img {
+  aspect-ratio: 2/3;
+  width: 250px;
+  height: 100%;
+  border-radius: 1rem;
+  border: 0.2rem solid var(--th-text-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .plano-img img {
-    width: 750px;
-    height: 850px;
-    background: #515050; /* caso a imagem não carregue */
-    border-radius: 12px;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plano-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+  max-width: 400px;
 }
 
 .plano-info h3 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.plano-info p {
-    margin: 10px 0;
-    max-width: 350px;
+  font-weight: bold;
 }
 
 .plano-info ul {
-    margin: 10px 0 20px;
-    padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.25rem;
+  list-style-type: disc;
+  color: var(--th-text-1);
+  margin-left: 2rem;
 }
 
 .plano-info ul li {
-    margin-bottom: 6px;
-    font-size: 15px;
+  font-weight: 500;
+}
+
+.plano-info span {
+  color: var(--th-text-1);
+  font-size: 1rem;
 }
 
 .preco {
-    font-size: 26px;
-    font-weight: bold;
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 0.1rem;
+  font-weight: bold;
 }
 
-.preco span {
-    font-size: 18px;
-    font-weight: normal;
-}
+.preco span.moeda { font-size: 2rem; }
+.preco span.inteiro { font-size: 4rem; margin-bottom: -0.75rem; }
+.preco span.separad { font-size: 2rem; }
+.preco span.real { font-size: 2rem; }

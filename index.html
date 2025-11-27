@@ -19,119 +19,118 @@
   <!-- Skip Menu go to main content -->
   <a id="link-skip-main" tabindex="1" href="#main">Ir para o conteúdo principal</a>
   
-  <div id="header-container">header</div>
-
   <main id="main">
 
-    <!-- Banner -->
-    <section><a href="" class="hvAnim bot left">Link</a></section>
-    <!-- Sobre -->
-    <section></section>
-    <!-- Nossos -->
-    <section></section>
+    <!-- Nossos Servicos -->
+    <section class="servicos">
+      <h2>Nossos serviços</h2>
+
+      <div class="cards-container">
+          
+          <div class="card">
+              <img src="/Imagens/musculacao.jpg" alt="Serviço 1">
+              <h3>Musculação</h3>
+              <p>Treino com aparelhos e pesos livres para ganho de força e hipertrofia.</p>
+          </div>
+
+          <div class="card">
+              <img src="/Imagens/personal.jpg" alt="Instrutores e Acompanhamento">
+              <h3>Instrutores & Acompanhamento</h3>
+              <p>Acompanhamento direto com instrutores para orientação, correção de exercícios e evolução contínua no treino.</p>
+          </div>
+
+          <div class="card">
+              <img src="/Imagens/avaliacao.webp" alt="Suplementos e Produtos">
+              <h3>Suplementos & Produtos</h3>
+              <p>Venda de suplementos, acessórios e itens essenciais para potencializar seus resultados.</p>
+          </div>
+
+      </div>
+    </section>
+
     <!-- Plano -->
-    <section></section>
-    <!-- Horário -->
-    <section></section>
-    <!-- Social -->
-    <section></section>
+    <section class="planos">
+      <h2>Planos</h2>
 
-    <div class="legal flex flex-row">
-      <p><i class="bi bi-house"></i></p>
-    </div>
+      <div class="planos-content">
 
-  </main>
-
-<section class="servicos">
-    <h2>Nossos serviços</h2>
-
-    <div class="cards-container">
-        
-        <div class="card">
-            <img src="/Imagens/musculacao.jpg" alt="Serviço 1">
-            <h3>Musculação</h3>
-            <p>treino com aparelhos e pesos livres para ganho de força e hipertrofia.</p>
-        </div>
-
-        <div class="card">
-            <img src="/Imagens/avaliacao.webp" alt="Serviço 2">
-            <h3>Avaliação física</h3>
-            <p>medição de composição corporal, condicionamento e acompanhamento de evolução.</p>
-        </div>
-
-        <div class="card">
-            <img src="/Imagens/personal.jpg" alt="Serviço 3">
-            <h3>Personal trainer</h3>
-            <p>treinamento individualizado com acompanhamento exclusivo..</p>
-        </div>
-
-    </div>
-</section>
-
-<section class="planos">
-    <h2>Planos</h2>
-
-    <div class="plano-card">
-        <div class="plano-img">
+        <div class="plano-card">
+          <div class="plano-img">
             <img src="/Imagens/plano.jpg" alt="Plano Essencial">
-        </div>
-
-        <div class="plano-info">
+          </div>
+          <div class="plano-info">
             <h3>Plano Essencial</h3>
             <p>O plano ESSENCIAL que todo mundo precisa.</p>
-
-            
-            <p>Acesso ao espaço de treinamento</p>
-            <p>Assistência e Guia dos professores</p>
-            <p>Entrada 100% livre nos horários de funcionamento</p>
-            
-
-             <h1 class="preco">
-              <span>R$</span> <strong>90,00</strong>
-            </h1>
+            <ul>
+              <li><span>Acesso ao espaço de treinamento</span></li>
+              <li><span>Assistência e Guia dos professores</span></li>
+              <li><span>Entrada 100% livre nos horários de funcionamento</span></li>
+            </ul>
+            <div class="preco">
+              <span class="moeda">R$</span>
+              <span class="inteiro">90</span>
+              <span class="separad">,</span>
+              <span class="real">00</span>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
 
+      </div>
 
-<h2 class="titulo-horarios">Horários de Funcionamento e Atendimento</h2>
+    </section>
 
-<table class="horarios"> <!-- classe do titulo da tabela-->
-    <thead>
-        <tr>
-            <th>DOM</th>
-            <th>SEG</th>
-            <th>TER</th>
-            <th>QUA</th>
-            <th>QUI</th>
-            <th>SEX</th>
-            <th>SAB</th>
-        </tr>
-    </thead>
+    <!-- Horário -->
+    <section class="horarios">
+      <h2 class="titulo-horarios">Horários de Funcionamento e Atendimento</h2>
+      <table class="horarios-table">
+          <thead>
+              <tr>
+                  <th>DOM</th>
+                  <th>SEG</th>
+                  <th>TER</th>
+                  <th>QUA</th>
+                  <th>QUI</th>
+                  <th>SEX</th>
+                  <th>SAB</th>
+              </tr>
+          </thead>
 
-    <tbody>
-        <tr>
-            <td class="vermelho" rowspan="1"></td> <!--Definindo o bloco do domingo como vermelho-->
+          <tbody>
+              <tr>
+                  <td class="vermelho" colspan="1"></td>
 
-            <!-- Definindo a cor dos dias de seg a qui e juntando as colunas -->
-            <td class="verde texto-grande" colspan="4">06h → 22h</td>
+                  <td class="semana" colspan="4">
+                    <div class="horario-wrapper verde texto-grande">
+                      <span>06h</span>
+                      <i class="bi bi-arrow-right"></i>
+                      <span>22h</span>
+                    </div>
+                  </td>
+                  
+                  <td class="sexta" colspan="1">
+                    <div class="horario-wrapper verde sex-dia texto-medio">
+                      <span>06h</span>
+                      <i class="bi bi-arrow-right"></i>
+                      <span>20h</span>
+                    </div>
+                    <div class="horario vermelho sex-fim"></div>
+                  </td>
 
-            <!-- Definindo sex pois é um horario diferente dos demais -->
-            <td class="verde pequeno">
-                06h<br>→<br>20h
-            </td>
+                  <td class="sabado" colspan="1">
+                    <div class="horario-wrapper verde sab-manha texto-pequeno">
+                      <span>06h</span>
+                      <i class="bi bi-arrow-right"></i>
+                      <span>12h</span>
+                    </div>
+                    <div class="horario-wrapper vermelho sab-tarde"></div>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+    </section>
 
-            <!-- Mesma ideia da sexta mas dividindo a coluna em duas para uma parte vermelha sab-tarde e uma verde para sab-manha -->
-            <td class="sabado">
-                <div class="sab-manha">06h<br>→<br>12h</div>
-                <div class="sab-tarde"></div>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-  
-
+  </main>
+ 
   <div id="footer-container">
     <div>
       <select name="select-theme" id="select-theme">
@@ -149,6 +148,5 @@
     </div>
   </div>
 
-  
 </body>
 </html>
