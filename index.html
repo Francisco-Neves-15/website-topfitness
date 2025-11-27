@@ -42,6 +42,96 @@
 
   </main>
 
+<section class="servicos">
+    <h2>Nossos serviços</h2>
+
+    <div class="cards-container">
+        
+        <div class="card">
+            <img src="/Imagens/musculacao.jpg" alt="Serviço 1">
+            <h3>Musculação</h3>
+            <p>treino com aparelhos e pesos livres para ganho de força e hipertrofia.</p>
+        </div>
+
+        <div class="card">
+            <img src="/Imagens/avaliacao.webp" alt="Serviço 2">
+            <h3>Avaliação física</h3>
+            <p>medição de composição corporal, condicionamento e acompanhamento de evolução.</p>
+        </div>
+
+        <div class="card">
+            <img src="/Imagens/personal.jpg" alt="Serviço 3">
+            <h3>Personal trainer</h3>
+            <p>treinamento individualizado com acompanhamento exclusivo..</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="planos">
+    <h2>Planos</h2>
+
+    <div class="plano-card">
+        <div class="plano-img">
+            <img src="/Imagens/plano.jpg" alt="Plano Essencial">
+        </div>
+
+        <div class="plano-info">
+            <h3>Plano Essencial</h3>
+            <p>O plano ESSENCIAL que todo mundo precisa.</p>
+
+            
+            <p>Acesso ao espaço de treinamento</p>
+            <p>Assistência e Guia dos professores</p>
+            <p>Entrada 100% livre nos horários de funcionamento</p>
+            
+
+             <h1 class="preco">
+              <span>R$</span> <strong>90,00</strong>
+            </h1>
+        </div>
+    </div>
+</section>
+
+
+<h2 class="titulo-horarios">Horários de Funcionamento e Atendimento</h2>
+
+<table class="horarios"> <!-- classe do titulo da tabela-->
+    <thead>
+        <tr>
+            <th>DOM</th>
+            <th>SEG</th>
+            <th>TER</th>
+            <th>QUA</th>
+            <th>QUI</th>
+            <th>SEX</th>
+            <th>SAB</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="vermelho" rowspan="1"></td> <!--Definindo o bloco do domingo como vermelho-->
+
+            <!-- Definindo a cor dos dias de seg a qui e juntando as colunas -->
+            <td class="verde texto-grande" colspan="4">06h → 22h</td>
+
+            <!-- Definindo sex pois é um horario diferente dos demais -->
+            <td class="verde pequeno">
+                06h<br>→<br>20h
+            </td>
+
+            <!-- Mesma ideia da sexta mas dividindo a coluna em duas para uma parte vermelha sab-tarde e uma verde para sab-manha -->
+            <td class="sabado">
+                <div class="sab-manha">06h<br>→<br>12h</div>
+                <div class="sab-tarde"></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+  
+
   <div id="footer-container">
     <div>
       <select name="select-theme" id="select-theme">
@@ -59,5 +149,6 @@
     </div>
   </div>
 
+  
 </body>
 </html>

@@ -1,0 +1,89 @@
+p {
+    color: var(--th-text-1);
+}
+
+
+body { /*Definindo as coisas basicas do corpo do texto */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* espaço nas bordas */
+}
+
+.titulo-horarios {
+    color: #ff7a1a;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+
+table.horarios { /* Estilo geral da tabela */
+    border-collapse: collapse; /* remove espaçamento entre células */
+    width: 100%; /* ocupa a largura inteira da página */
+    max-width: 100%; /* garante que nunca passe da tela */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Alinha tudo para o centro */
+    table-layout: fixed; /* Mantem a largura da tabela fixa ou igual */
+
+    border-radius: 2px;   /* bordas arredondadas */
+    overflow: hidden;      /* impede que o conteúdo “vaze” */
+}
+thead th {
+    background: black; /* Cor do fundo do cabeçalho */
+    padding: 4px;          /* altura menor */
+    font-weight: bold;
+    border: 1px solid #ffffff; /* borda solida */ 
+}  
+
+
+tbody td {
+    border: 1px solid #ffffff; /* borda solida */ 
+    vertical-align: middle; /* conteúdo centralizado verticalmente */
+    height: 30vh;
+}
+
+/* Células sábado divididas */
+.sabado div {
+    height: 50%;  /* metade para cada bloco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cores */
+.vermelho {
+    background: #b60000;
+}
+
+.verde {
+    background: #2e9b27;
+}
+
+/* Texto grande (SEG → QUI) */
+.texto-grande {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Célula menor da sexta */
+.pequeno {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* SAB dividido em 2 */
+.sabado {
+    padding: 0;
+}
+
+.sab-manha {
+    background: #2e9b27;
+    font-size: 20px;
+}
+
+.sab-tarde {
+    background: #b60000;
+}

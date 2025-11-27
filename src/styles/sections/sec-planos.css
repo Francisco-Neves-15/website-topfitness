@@ -1,0 +1,54 @@
+.planos {
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.planos h2 {
+    color: #ff7a00;
+    margin-bottom: 25px;
+}
+
+.plano-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.plano-img img {
+    width: 750px;
+    height: 850px;
+    background: #515050; /* caso a imagem não carregue */
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.plano-info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plano-info p {
+    margin: 10px 0;
+    max-width: 350px;
+}
+
+.plano-info ul {
+    margin: 10px 0 20px;
+    padding-left: 20px;
+}
+
+.plano-info ul li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.preco {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.preco span {
+    font-size: 18px;
+    font-weight: normal;
+}

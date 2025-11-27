@@ -1,0 +1,39 @@
+.servicos {
+    padding: 40px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.servicos h2 {
+    color: #ff7a00;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    min-width: 260px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    background-color: #ccc; /* caso a imagem não carregue */
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+}
