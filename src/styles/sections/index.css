@@ -1,0 +1,26 @@
+/* ===== LAYOUT GERAL ===== */
+.container {
+  width: 100%;
+}
+
+.grid-2 {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+}
+
+.container h1 {
+  width: 100%;
+  color: var(--cl-primary-200);
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .container h1 {
+    text-align: center;
+  }
+  .container .horarios-title {
+    font-size: 1.5rem;
+  }
+}

@@ -5,6 +5,7 @@ import { loadHeader, loadFooter } from "./essentials.js";
 // Utils Functions
 import { initTheme, toggleTheme } from "../hooks/utilsTheme.js";
 import { initLang, toggleLang } from "../hooks/utilsLang.js";
+import { updateMapSize } from './maps-configs.js';
 
 // Import de Scripts de Componentes
 import { initHeader } from "../components/header/header.js";
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   // Idioma automático: detecta mudança do idioma (simulado por DevTools)
-  // (Não é detectável em todos os navegadores, mas útil para debug e simulação)
+  // (Nem todos os navegadores dão suporte)
   window.addEventListener('languagechange', () => {
     const LS = localStorage.getItem('user-lang');
     // console.warn(`DEBUG: System language changed!`);
@@ -49,5 +50,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       toggleLang('device', 'initial');
     }
   });
+
+  updateMapSize()
+  // Atualiza ao redimnsionar a janela
+  window.addEventListener("resize", updateMapSize);
 
 });

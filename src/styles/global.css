@@ -1,4 +1,5 @@
 html {
+  width: 100%;
   font-size: 16px;
   line-height: 1.5;
   font-family: 'Poppins';
@@ -6,6 +7,7 @@ html {
 }
 
 body {
+  width: 100%;
   background-color: var(--th-bg-1);
   min-height: 100vh;
   display: flex;
@@ -31,7 +33,7 @@ main {
   width: 100%;
 }
 [data-device="small"] main {
-  padding: 0.5em;
+  padding: 0.5rem;
 }
 [data-device="medium"] main {
   padding: 0.75em;
@@ -42,26 +44,44 @@ main {
 
 section {
   width: 100%;
+  padding: 1rem;
+}
+[data-device="small"] section {
+  padding: 2em 1em;
+}
+[data-device="medium"] section {
+  padding: 2em 2em;
+}
+[data-device="large"] section {
+  padding: 4em 4em;
 }
 
 h1 {
-  font-size: var(--font-3xl);
+  font-size: var(--font-2xl);
   color: var(--th-text-1);
+  font-weight: bold;
 }
 
 h2 {
-  font-size: var(--font-2xl);
+  font-size: var(--font-xl);
   color: var(--th-text-1);
+  font-weight: bold;
 }
 
 h3 {
-  font-size: var(--font-xl);
+  font-size: var(--font-lg);
   color: var(--th-text-1);
+  font-weight: bold;
 }
 
 p {
   font-size: var(--font-base);
   color: var(--th-text-1);
+  font-weight: 500;
+}
+
+span {
+  font-weight: 500;
 }
 
 a {
@@ -72,6 +92,10 @@ a {
 ul {
   list-style-type: none;
   list-style: none;
+}
+
+ul li {
+  font-weight: 500;
 }
 
 .bi {

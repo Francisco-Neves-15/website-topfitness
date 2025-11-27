@@ -1,0 +1,88 @@
+/* ===== CARROSSEL ===== */
+.carousel {
+  position: relative;
+}
+
+.carousel-slides {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.7s ease;
+}
+
+.carousel-slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  background: rgba(0,0,0,0.5);
+  padding: 0.4rem;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+}
+.carousel-btn.prev {
+  left: 0;
+  transform: translateY(-50%) translateX(0);
+}
+.carousel-btn.next {
+  right: 0;
+  transform: translateY(-50%) translateX(0);
+}
+.carousel-btn i {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 0.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #ffffff;
+}
+
+/* ===== SOBRE ===== */
+.sobre-area p {
+  line-height: 1.6;
+}
+
+@media (max-width: 1023px) {
+  .sobre-left {
+    justify-content: center;
+    align-items: center;
+  }
+  .sobre-right {
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem
+  }
+}
+@media (min-width: 1024px) {
+  .sobre-left {
+    padding-left: 0rem;
+  }
+  .sobre-right {
+    padding-right: 5rem;
+  }
+}

@@ -1,0 +1,152 @@
+.planos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.planos-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.plano-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.2rem;
+  align-items: stretch;
+  position: relative;
+  border: 0.2rem solid var(--th-text-1);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.plano-img {
+  aspect-ratio: 2/3;
+  width: 250px;
+  height: 100%;
+  border-radius: 1rem;
+  /* border: 0.2rem solid var(--th-text-1); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.plano-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plano-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+  max-width: 400px;
+}
+
+.plano-info h3 {
+  font-weight: bold;
+}
+
+.plano-info ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.25rem;
+  list-style-type: disc;
+  color: var(--th-text-1);
+  margin-left: 2rem;
+}
+
+.plano-info ul li {
+  font-weight: 500;
+  text-align: left;
+}
+
+.plano-info span {
+  color: var(--th-text-1);
+  font-size: 1rem;
+}
+
+.preco {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 0.1rem;
+  font-weight: bold;
+}
+
+.preco span.moeda { font-size: 2rem; }
+.preco span.inteiro { font-size: 4rem; margin-bottom: -0.75rem; }
+.preco span.separad { font-size: 2rem; }
+.preco span.real { font-size: 2rem; }
+
+.planos-line {
+  width: 0.2rem;
+  flex: 1;
+  background-color: var(--th-text-1);
+  border-radius: 1rem;
+}
+
+@media (max-width: 1023px) {
+  .planos-line {
+    display: none;
+  }
+  .plano-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 0.2rem solid var(--th-text-1);
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  .plano-img {
+    position: absolute;
+    aspect-ratio: 2/3;
+    width: 300px;
+    height: 100%;
+    z-index: 1;
+    filter: brightness(20%) blur(2px);
+    border: none;
+  }
+  .plano-info {
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .plano-info h1 {
+    text-align: center;
+  }
+  .plano-info p {
+    text-align: center;
+    width: 90%;
+  }
+  .plano-info ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem;
+  }
+  .plano-info ul li {
+    text-shadow: 0px 0px 2px #000000;
+  }
+}

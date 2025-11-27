@@ -1,0 +1,110 @@
+table.horarios-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  table-layout: fixed;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+thead th {
+  background: black;
+  font-weight: bold;
+  border: 1px solid #ffffff;
+  height: 100%;
+  color: #ffffff;
+  padding: 0.4rem 0;
+}  
+
+tbody td {
+  border: 1px solid #ffffff;
+  height: 240px;
+}
+
+tbody .horario-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+tbody td span {
+  font-weight: bold;
+  color: #ffffff;
+}
+tbody td i {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Cores */
+.vermelho {
+  background: var(--cl-danger-300);
+}
+
+.verde {
+  background: var(--cl-success-300);
+}
+
+.texto-grande {
+  font-size: 2.4rem;
+}
+.texto-medio {
+  font-size: 1.8rem;
+}
+.texto-pequeno {
+  font-size: 1.2rem;
+}
+@media (max-width: 1023px) {
+  .texto-grande {
+    font-size: 2.5rem;
+  }
+  .texto-medio {
+    font-size: 1.2rem;
+  }
+  .texto-pequeno {
+    font-size: 1rem;
+  }
+}
+
+/* Especificos */
+
+.semana div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+
+.sexta div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.sex-dia {
+  height: 90%;
+}
+
+.sex-fim {
+  height: 10%;
+}
+
+.sabado div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.sabado .sab-manha {
+  height: 50%;
+}
+.sabado .sab-tarde {
+  height: 50%;
+}
+
