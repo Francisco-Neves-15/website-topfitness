@@ -67,7 +67,7 @@
   line-height: 1.6;
 }
 
-@media (max-width: 1023px) {
+[data-layout="compact"] {
   .sobre-left {
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@
     gap: 0.5rem
   }
 }
-@media (min-width: 1024px) {
+[data-layout="expanded"] {
   .sobre-left {
     padding-left: 0rem;
   }

@@ -80,7 +80,7 @@
   width: 100%;
 }
 
-@media (max-width: 1023px) {
+[data-layout="compact"] {
   .social-left {
     justify-content: center;
     align-items: center;
@@ -99,7 +99,7 @@
     max-width: 100%;
   }
 }
-@media (min-width: 1024px) {
+[data-layout="expanded"] {
   .social-left {
     padding-left: 5rem;
   }

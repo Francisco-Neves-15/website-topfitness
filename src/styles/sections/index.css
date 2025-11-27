@@ -16,7 +16,8 @@
   color: var(--cl-primary-200);
   text-align: left;
 }
-@media (max-width: 1024px) {
+
+[data-layout="compact"] {
   .container h1 {
     text-align: center;
   }

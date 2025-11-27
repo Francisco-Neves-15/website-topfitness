@@ -101,7 +101,7 @@
   border-radius: 1rem;
 }
 
-@media (max-width: 1023px) {
+[data-layout="compact"] {
   .planos-line {
     display: none;
   }
