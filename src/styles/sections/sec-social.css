@@ -1,0 +1,115 @@
+
+/* Social */
+.social-area {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.social-left {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.social-right {
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== MAIS INFO ===== */
+.info-title {
+  font-weight: bold;
+  color: #ff7a1a;
+}
+
+.social-list,
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.social-list a,
+.contact-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.social-list span,
+.contact-list span {
+  color: var(--th-text-1);
+}
+
+.icon-box {
+  border-radius: 4px;
+  padding: 0.2rem;
+}
+
+.icon-box i {
+  font-size: 1rem;
+  color: #000;
+  color: var(--th-text-1);
+}
+
+/* ===== MAPA ===== */
+.map-box {
+  /* width: 80%; */
+  /* aspect-ratio: 16/10; */
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 4px solid #ff7a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-desc {
+  max-width: 80%;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.map-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .social-left {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .social-right {
+    align-items: center;
+    justify-content: center;
+  }
+  .social-area h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    width: 100%;
+  }
+  .map-desc {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .social-left {
+    padding-left: 5rem;
+  }
+  .social-right {
+    padding-right: 5rem;
+  }
+}
