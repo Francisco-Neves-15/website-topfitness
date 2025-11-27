@@ -17,9 +17,10 @@
 @import url('../components/header/header.css');
 
 /* Styles */
+@import url('./sections/index.css');
 @import url('./sections/sec-banner.css');
 @import url('./sections/sec-sobre.css');
-@import url('./sections/sec-servico.css');
+@import url('./sections/sec-servicos.css');
 @import url('./sections/sec-planos.css');
 @import url('./sections/sec-horarios.css');
 @import url('./sections/sec-social.css');

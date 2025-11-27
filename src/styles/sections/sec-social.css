@@ -18,11 +18,6 @@
 }
 
 /* ===== MAIS INFO ===== */
-.info-title {
-  font-weight: bold;
-  color: #ff7a1a;
-}
-
 .social-list,
 .contact-list {
   display: flex;
@@ -54,7 +49,6 @@
 
 .icon-box i {
   font-size: 1rem;
-  color: #000;
   color: var(--th-text-1);
 }
 
@@ -64,7 +58,7 @@
   /* aspect-ratio: 16/10; */
   border-radius: 1rem;
   overflow: hidden;
-  border: 4px solid #ff7a1a;
+  border: 4px solid var(--cl-primary-200);
   display: flex;
   justify-content: center;
   align-items: center;

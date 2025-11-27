@@ -1,0 +1,54 @@
+/* Serviços */
+
+.servicos-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.4rem;
+  /* min-width: 320px; */
+  width: 30%;
+  max-width: 400px;
+}
+
+.card img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  /* border: 0.2rem solid var(--th-text-1); */
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+@media (max-width: 1023px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .card {
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 90%;
+  }
+}

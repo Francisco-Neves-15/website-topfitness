@@ -1,7 +1,3 @@
-.titulo-horarios {
-  color: #ff7a1a;
-}
-
 table.horarios-table {
   border-collapse: collapse;
   width: 100%;
@@ -17,6 +13,8 @@ thead th {
   font-weight: bold;
   border: 1px solid #ffffff;
   height: 100%;
+  color: #ffffff;
+  padding: 0.4rem 0;
 }  
 
 tbody td {
@@ -43,11 +41,11 @@ tbody td i {
 
 /* Cores */
 .vermelho {
-  background: #b60000;
+  background: var(--cl-danger-300);
 }
 
 .verde {
-  background: #2e9b27;
+  background: var(--cl-success-300);
 }
 
 .texto-grande {
@@ -58,6 +56,17 @@ tbody td i {
 }
 .texto-pequeno {
   font-size: 1.2rem;
+}
+@media (max-width: 1023px) {
+  .texto-grande {
+    font-size: 2.5rem;
+  }
+  .texto-medio {
+    font-size: 1.2rem;
+  }
+  .texto-pequeno {
+    font-size: 1rem;
+  }
 }
 
 /* Especificos */

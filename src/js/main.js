@@ -18,22 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleTheme("default", "initial");
   toggleLang("default", "initial");
 
-  const themeSelect = document.getElementById('select-theme');
-  const langSelect = document.getElementById('select-lang');
-
-  // Ajusta selects conforme valor atual
-  themeSelect.value = localStorage.getItem('user-theme') || 'device';
-  langSelect.value = localStorage.getItem('user-lang') || 'device';
-
-  // Listeners de selects manuais
-  themeSelect.addEventListener('change', e => {
-    toggleTheme(e.target.value, 'userSelect');
-  });
-
-  langSelect.addEventListener('change', e => {
-    toggleLang(e.target.value, 'userSelect');
-  });
-
   // === OBSERVADORES DO SISTEMA ===
 
   // Tema automático: detecta mudança de prefers-color-scheme em tempo real
