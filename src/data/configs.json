@@ -13,17 +13,17 @@
     "pt-BR": {
       "name": "Português",
       "path": "../i18n/pt-BR.json",
-      "flag": "../../../public/assets/flags/br.png"
+      "flag": "./public/assets/flags/br.png"
     },
     "en-US": {
       "name": "English",
       "path": "../i18n/en-US.json",
-      "flag": "../../../public/assets/flags/us.png"
+      "flag": "./public/assets/flags/us.png"
     },
     "fr-FR": {
       "name": "Français",
       "path": "../i18n/fr-FR.json",
-      "flag": "../../../public/assets/flags/fr.png"
+      "flag": "./public/assets/flags/fr.png"
     }
   }
 }
