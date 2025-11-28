@@ -94,7 +94,7 @@ export async function initHeader() {
   console.log("*INFO*: Header initialized");
 
   window.addEventListener("breakpointchange", (event) => {
-    const { layout } = event.detail;
+    const { device, layout } = event.detail;
     resetHeader(layout);
   });
   

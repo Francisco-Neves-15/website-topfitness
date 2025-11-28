@@ -1,0 +1,228 @@
+/* =============== Buttons */
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none; 
+  border-radius: 2em;
+  height: auto;
+  width: auto;
+  padding: 0.5rem 1.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Primary */
+.btn-primary {
+  background-color: var(--cl-primary-200);
+}
+[data-device="small"] .btn-primary:active {
+  background-color: var(--cl-primary-300);
+}
+[data-device="medium"] .btn-primary:active {
+  background-color: var(--cl-primary-300);
+}
+[data-device="large"] .btn-primary:hover {
+  background-color: var(--cl-primary-300);
+}
+.btn-primary {
+  background-color: var(--cl-primary-200);
+}
+/* Secondary */
+.btn-secondary {
+  background-color: var(--cl-secondary-200);
+}
+[data-device="small"] .btn-secondary:active {
+  background-color: var(--cl-secondary-300);
+}
+[data-device="medium"] .btn-secondary:active {
+  background-color: var(--cl-secondary-300);
+}
+[data-device="large"] .btn-secondary:hover {
+  background-color: var(--cl-secondary-300);
+}
+.btn-secondary {
+  background-color: var(--cl-secondary-200);
+}
+/* Tertiary */
+.btn-tertiary {
+  background-color: var(--cl-tertiary-200);
+}
+[data-device="small"] .btn-tertiary:active {
+  background-color: var(--cl-tertiary-300);
+}
+[data-device="medium"] .btn-tertiary:active {
+  background-color: var(--cl-tertiary-300);
+}
+[data-device="large"] .btn-tertiary:hover {
+  background-color: var(--cl-tertiary-300);
+}
+
+.btn-ghost { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none; 
+  border-radius: 2em;
+  height: auto;
+  width: auto;
+  padding: 0.5rem;
+  color: var(--th-text-1);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  background-color: transparent;
+}
+[data-device="small"] .btn-ghost:active {
+  background-color: var(--cl-neutral-tr);
+}
+[data-device="medium"] .btn-ghost:active {
+  background-color: var(--cl-neutral-tr);
+}
+[data-device="large"] .btn-ghost:hover {
+  background-color: var(--cl-neutral-tr);
+}
+
+.btn-icon {
+  aspect-ratio: 1/1;
+  border-radius: 2em;
+  padding: 0.5rem;
+}
+
+/* =============== Socal Icons */
+
+.social-link {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-icon-box {
+  padding: 0.4rem;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  position: relative;
+}
+.social-icon-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;  
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 9;
+}
+
+.social-link .social-icon-box i {
+  font-size: var(--icon-footer-size);
+  color: var(--th-text-1);
+  position: relative;
+  z-index: 10;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-link span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--th-text-1);
+}
+
+[data-device="small"] .social-icon-box::before {
+  opacity: 1;
+}
+[data-device="medium"] .social-icon-box::before {
+  opacity: 1;
+}
+[data-device="large"] .social-icon-box::before {
+  opacity: 0;
+}
+
+[data-device="small"] .social-link:active .social-icon-box::before {
+  opacity: 1;
+}
+[data-device="medium"] .social-link:active .social-icon-box::before {
+  opacity: 1;
+}
+[data-device="large"] .social-link:hover .social-icon-box::before {
+  opacity: 1;
+}
+
+[data-device="small"] .social-link-telephone .social-icon-box i {
+  color: var(--th-text-2);
+}
+[data-device="medium"] .social-link-telephone .social-icon-box i {
+  color: var(--th-text-2);
+}
+[data-device="large"] .social-link-telephone:hover .social-icon-box i {
+  color: var(--th-text-2);
+}
+
+.social-link-instagram .social-icon-box::before {
+  background-color: var(--cl-facebook);
+}
+.social-link-facebook .social-icon-box::before {
+  background: var(--cl-instagram2);
+  background: var(--grad-instagram-webkit);
+  background: var(--grad-instagram-moz);
+  background: var(--grad-instagram-base);
+}
+.social-link-telephone .social-icon-box::before {
+  background-color: var(--th-bg-2);
+}
+/* 
+[data-device="small"] .social-link:active {
+  background-color: var(--cl-neutral-tr);
+}
+[data-device="medium"] .social-link:active {
+  background-color: var(--cl-neutral-tr);
+}
+[data-device="large"] .social-link:hover {
+  background-color: var(--cl-neutral-tr);
+} */
+
+/* =============== Button Scroll to Top */
+#btn-scrollToTop {
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  gap: 0.5rem;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+#btn-scrollToTop.show {
+  opacity: 1;
+  z-index: 999;
+  pointer-events: all;
+}
+
+#btn-scrollToTop i {
+  font-size: 1.5rem !important;
+}
+#btn-scrollToTop span {
+  font-size: 1rem;
+}
+
+[data-device="small"] #btn-scrollToTop span {
+  display: none;
+}
+[data-device="medium"] #btn-scrollToTop span {
+  display: none;
+}
+[data-device="large"] #btn-scrollToTop span {
+  display: block;
+}

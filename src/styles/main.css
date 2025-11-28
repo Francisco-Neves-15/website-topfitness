@@ -5,6 +5,8 @@
 
 /* Aplicações em todos os locais */
 @import url('./global.css');
+@import url('./miscellaneous.css');
+@import url('./components.css');
 
 /* Stylesheet e Temas */
 @import url('./_stylesheet.css');

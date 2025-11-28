@@ -19,10 +19,16 @@
   <!-- Skip Menu go to main content -->
   <a id="link-skip-main" tabindex="1" href="#main">Ir para o conteúdo principal</a>
   
+  <button id="btn-scrollToTop" class="btn btn-tertiary" title="Go to top">
+    <span>Ir para o topo</span>
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
   <header id="header"></header>
 
   <main id="main">
 
+    <!-- Banner -->
     <section> 
       <div class="container grid-2">
 
@@ -34,7 +40,7 @@
             <li>Contato</li>
             <li>Horários</li>
           </ul>
-          <a class="btn-banner">Conheça nossos planos</a>
+          <button class="btn btn-primary btn-banner">Conheça nossos planos</button>
         </div>
         
         <!-- RIGHT -->
@@ -52,25 +58,30 @@
       <div class="container grid-2">
 
         <!-- CARROSSEL -->
-        <div class="sobre-area sobre-left carousel">
+        <div class="sobre-area sobre-left">
 
-          <div id="carouselSlides" class="carousel-slides">
-            <img src="img/1.jfif" alt="">
-            <img src="img/2.jfif" alt="">
-            <img src="img/3.jpeg" alt="">
-          </div>
+          <div class="carousel">
 
-          <button id="prevBtn" class="carousel-btn prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-          <button id="nextBtn" class="carousel-btn next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
+            <div id="carouselSlides" class="carousel-slides">
+              <img src="img/1.jfif" alt="">
+              <img src="img/2.jfif" alt="">
+              <img src="img/3.jpeg" alt="">
+            </div>
 
-          <div class="carousel-dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+            <!-- <button id="prevBtn" class="carousel-btn prev">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <button id="nextBtn" class="carousel-btn next">
+              <i class="bi bi-chevron-right"></i>
+            </button> -->
+
+            <!-- <div class="carousel-dots">
+              <div class="carousel-dot"></div>
+              <div class="carousel-dot"></div>
+              <div class="carousel-dot"></div>
+            </div> -->
+
           </div>
 
         </div>
@@ -228,23 +239,34 @@
           <div class="social-list">
             <h3 class="section-subtitle">Redes Sociais</h3>
 
-            <a href="https://www.instagram.com/dieny.cordeiro" target="_blank">
-              <div class="icon-box"><i class="bi bi-instagram"></i></div>
-              <span>Instagram</span>
+            <a href="https://www.instagram.com/dieny.cordeiro" title="Instagram" target="_blank" class="social-link social-link-instagram social-link-contato">
+              <div class="social-icon-box">
+                <i class="bi bi-facebook"></i>
+              </div>
+              <span class="hvAnim bottom left hvFont">Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/tofintinss" title="Facebook" target="_blank" class="social-link social-link-facebook social-link-contato">
+              <div class="social-icon-box">
+                <i class="bi bi-instagram"></i>
+              </div>
+              <span class="hvAnim bottom left hvFont">Facebook</span>
             </a>
 
-            <a href="https://www.facebook.com/tofintinss" target="_blank">
-              <div class="icon-box"><i class="bi bi-facebook"></i></div>
-              <span>Facebook</span>
-            </a>
-          </div> 
+          </div>
           <div class="contact-list">
             <h3 class="section-subtitle">Contato</h3>
 
-            <a href="https://wa.me/5517992595323" target="_blank">
+            <!-- <a href="https://wa.me/5517992595323" target="_blank">
               <div class="icon-box"><i class="bi bi-whatsapp"></i></div>
-              <span>+55 17 99259-5323</span>
+            </a> -->
+            
+            <a href="https://wa.me/5517992595323" target="_blank" class="social-link social-link-telephone social-link-contato">
+              <div class="social-icon-box">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <span class="hvAnim bottom left hvFont">+55 17 99259-5323</span>
             </a>
+
           </div>
 
         </div>

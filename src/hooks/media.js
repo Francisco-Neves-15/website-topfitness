@@ -1,6 +1,6 @@
 import readCssNumberVar from "../util/readCssNumberVar.js";
 
-export function initMedia() {
+export async function initMedia() {
   const html = document.documentElement;
 
   // --- lê os breakpoints no :root ---

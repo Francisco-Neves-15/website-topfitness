@@ -25,3 +25,10 @@
     font-size: 1.5rem;
   }
 }
+
+[data-layout="expanded"] {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}

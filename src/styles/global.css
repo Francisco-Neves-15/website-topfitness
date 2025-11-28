@@ -61,18 +61,28 @@ h1 {
   color: var(--th-text-1);
   font-weight: bold;
 }
-
 h2 {
   font-size: var(--font-xl);
   color: var(--th-text-1);
   font-weight: bold;
 }
-
 h3 {
   font-size: var(--font-lg);
   color: var(--th-text-1);
   font-weight: bold;
 }
+
+[data-device="small"] h1 { font-size: var(--font-2xl) }
+[data-device="small"] h2 { font-size: var(--font-2xl) }
+[data-device="small"] h3 { font-size: var(--font-2xl) }
+
+[data-device="medium"] h1 { font-size: var(--font-xl) }
+[data-device="medium"] h2 { font-size: var(--font-lg) }
+[data-device="medium"] h3 { font-size: var(--font-md) }
+
+[data-device="large"] h1 { font-size: var(--font-2xl) }
+[data-device="large"] h2 { font-size: var(--font-2xl) }
+[data-device="large"] h3 { font-size: var(--font-2xl) }
 
 p {
   font-size: var(--font-base);
@@ -113,68 +123,6 @@ button {
   padding: 0;
 }
 
-.btn-primary{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: none; 
-  border-radius: 2em;
-  height: auto;
-  width: auto;
-  padding: 0.5rem 1.5rem;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  background-color: var(--cl-primary-200);
-}
-[data-device="small"] .btn-primary:active {
-  background-color: var(--cl-primary-300);
-}
-[data-device="medium"] .btn-primary:active {
-  background-color: var(--cl-primary-300);
-}
-[data-device="large"] .btn-primary:hover {
-  background-color: var(--cl-primary-300);
-}
-
-.btn-ghost { 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: none; 
-  border-radius: 2em;
-  height: auto;
-  width: auto;
-  padding: 0.5rem;
-  color: var(--th-text-1);
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  background-color: transparent;
-}
-[data-device="small"] .btn-ghost:active {
-  background-color: var(--cl-neutral-tr);
-}
-[data-device="medium"] .btn-ghost:active {
-  background-color: var(--cl-neutral-tr);
-}
-[data-device="large"] .btn-ghost:hover {
-  background-color: var(--cl-neutral-tr);
-}
-
-.btn-icon {
-  aspect-ratio: 1/1;
-  border-radius: 2em;
-  padding: 0.5rem;
-}
-
 /* *$ec* Icones */
 .gIcon {
   aspect-ratio: 1/1;
@@ -186,63 +134,6 @@ button {
   aspect-ratio: 1/1;
   width: 24px;
   height: auto;
-}
-
-/* *$ec* Hover Animation */
-.hvAnim {
-  cursor: pointer;
-  position: relative;
-}
-.hvAnim::before {
-  content: "";
-  position: absolute;
-  background-color: var(--th-link-1);
-  height: 2px;
-  border-radius: 0.2em;
-
-  transition: width 0.3s ease-in-out;
-  width: 0%;
-}
-.hvAnim:hover::before {
-  width: 100%;
-}
-
-.hvAnim.left::before {
-  left: 0;
-}
-.hvAnim.mid::before {
-  left: 50%;
-  translate: -50% 0;
-}
-.hvAnim.right::before {
-  right: 0;
-}
-
-.hvAnim.top::before {
-  top: 0;
-}
-.hvAnim.bottom::before {
-  bottom: 0;
-}
-
-.hvAnim.hvSecondary::before {
-  background-color: var(--th-highlight);
-}
-.hvAnim.hvFont::before {
-  background-color: var(--th-text-1);
-}
-
-[data-device="small"] .hvAnim:hover::before {
-  width: 0%;
-}
-[data-device="small"] .hvAnim:active::before {
-  width: 100%;
-}
-[data-device="medium"] .hvAnim:hover::before {
-  width: 0%;
-}
-[data-device="medium"] .hvAnim:active::before {
-  width: 100%;
 }
 
 /* Overlay */

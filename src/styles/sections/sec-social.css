@@ -99,7 +99,7 @@
     max-width: 100%;
   }
 }
-[data-layout="expanded"] {
+[data-device="large"] {
   .social-left {
     padding-left: 5rem;
   }
