@@ -1,7 +1,7 @@
 /* Importações em Geral */
 
 /* Reset do CSS */
-@import url('./_reset.css');
+@import url('./zReset.css');
 
 /* Aplicações em todos os locais */
 @import url('./global.css');
@@ -9,11 +9,11 @@
 @import url('./components.css');
 
 /* Stylesheet e Temas */
-@import url('./_stylesheet.css');
-@import url('./_screen.css');
+@import url('./zStylesheet.css');
+@import url('./zScreen.css');
 
 /* PFS - Pre Fabric Style */
-@import url('./_PFS.css');
+@import url('./xPFS.css');
 
 /* Componentes */
 /* Header */

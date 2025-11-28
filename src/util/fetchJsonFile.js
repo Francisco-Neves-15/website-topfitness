@@ -1,5 +1,5 @@
 const knownJsonFiles = {
-  configs: "../src/data/configs.json",
+  configs: "./src/data/configs.json",
 };
 
 export default async function fetchJsonFile(keyOrPath) {
