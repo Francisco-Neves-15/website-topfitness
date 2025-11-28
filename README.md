@@ -16,15 +16,14 @@ O projeto foi realizado em parceria com o cliente, que *autorizou o uso do nome,
 - HTML5
 - CSS3
 - JavaScript
-- ?
 
 ---
 
 ## 👥 Equipe de Desenvolvimento
 
-- ...
-- ...
-- ...
+- L. Francisco Neves 
+- Marcella Escaranelli
+- Breno Ferracini
 - **Professor Orientador**: Lucimar Sasso Vieira
 
 ---
@@ -61,6 +60,6 @@ Link: https://francisco-neves-15.github.io/website-topfitness/
 
 Caso queira mais informações sobre o projeto ou sua proposta acadêmica, entre em contato:
 
-- ...
-- ...
-- ...
+- L. Francisco Neves: https://github.com/Francisco-Neves-15
+- Marcella Escaranelli: https://github.com/Marcella-Esc
+- Breno Ferracini: https://github.com/jogador096
