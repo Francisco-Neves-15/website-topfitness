@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  margin-left: 1rem;
 }
 
 .hero-links li {
@@ -31,7 +30,8 @@
 /* ===== HERO IMG ===== */
 
 .hero-img {
-  border-radius: 16px;
+  overflow: hidden;
+  border-radius: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -77,6 +77,14 @@
     text-align: center;
     font-size: 1.75rem;
     width: 100%;
+  }
+}
+[data-layout="expanded"] {
+  .hero-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-left: 1rem;
   }
 }
 [data-device="large"] {

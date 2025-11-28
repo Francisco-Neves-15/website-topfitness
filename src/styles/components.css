@@ -101,6 +101,10 @@
 /* =============== Socal Icons */
 
 .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -170,13 +174,13 @@
 }
 
 .social-link-instagram .social-icon-box::before {
-  background-color: var(--cl-facebook);
-}
-.social-link-facebook .social-icon-box::before {
   background: var(--cl-instagram2);
   background: var(--grad-instagram-webkit);
   background: var(--grad-instagram-moz);
   background: var(--grad-instagram-base);
+}
+.social-link-facebook .social-icon-box::before {
+  background-color: var(--cl-facebook);
 }
 .social-link-telephone .social-icon-box::before {
   background-color: var(--th-bg-2);
@@ -225,4 +229,84 @@
 }
 [data-device="large"] #btn-scrollToTop span {
   display: block;
+}
+
+/* Alert Box */
+#alert-box {
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  position: fixed;
+  left: 50%;
+  background-color: var(--cl-success-300);
+  transform: translateX(-50%);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+[data-layout="compact"] #alert-box {
+  top: -10%;
+  transition: top 0.3s ease-in-out;
+  width: 90%;
+  padding: 1rem;
+}
+[data-layout="expanded"] #alert-box {
+  bottom: -10%;
+  transition: bottom 0.3s ease-in-out;
+  width: 50%;
+  max-width: 420px;
+  padding: 1rem;
+}
+#alert-box.show {
+  opacity: 1;
+  z-index: 999;
+  pointer-events: all;
+}
+[data-layout="compact"] #alert-box.show {
+  top: 10%;
+}
+[data-layout="expanded"] #alert-box.show {
+  bottom: 10%;
+}
+
+#alert-box.primary {
+  background-color: var(--cl-primary-200);
+}
+#alert-box.secondary {
+  background-color: var(--cl-secondary-200);
+}
+#alert-box.tertiary {
+  background-color: var(--cl-tertiary-200);
+}
+#alert-box.success {
+  background-color: var(--cl-success-300);
+}
+#alert-box.error {
+  background-color: var(--cl-danger-300);
+}
+#alert-box.warn {
+  background-color: var(--cl-warning-300);
+}
+
+#alert-msg {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+}
+#alert-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+#alert-bar {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
 }

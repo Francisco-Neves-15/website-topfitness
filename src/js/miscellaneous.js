@@ -37,7 +37,7 @@ export function scrollToFunction(destiny) {
   const target = document.querySelector(destiny);
 
   if (!target) {
-    alert(`Elemento não encontrado: ${destiny}`);
+    console.warn(`Elemento não encontrado: ${destiny}`);
     return;
   }
 
@@ -62,3 +62,5 @@ export function configScrollTopBtn(device, layout) {
 btnScrollToTop?.addEventListener("click", () => {
   scrollToFunction("top");
 });
+
+// Função de copiar e colar

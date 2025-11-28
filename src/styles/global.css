@@ -73,16 +73,16 @@ h3 {
 }
 
 [data-device="small"] h1 { font-size: var(--font-2xl) }
-[data-device="small"] h2 { font-size: var(--font-2xl) }
-[data-device="small"] h3 { font-size: var(--font-2xl) }
+[data-device="small"] h2 { font-size: var(--font-xl) }
+[data-device="small"] h3 { font-size: var(--font-lg) }
 
 [data-device="medium"] h1 { font-size: var(--font-xl) }
 [data-device="medium"] h2 { font-size: var(--font-lg) }
 [data-device="medium"] h3 { font-size: var(--font-md) }
 
 [data-device="large"] h1 { font-size: var(--font-2xl) }
-[data-device="large"] h2 { font-size: var(--font-2xl) }
-[data-device="large"] h3 { font-size: var(--font-2xl) }
+[data-device="large"] h2 { font-size: var(--font-xl) }
+[data-device="large"] h3 { font-size: var(--font-lg) }
 
 p {
   font-size: var(--font-base);

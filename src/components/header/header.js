@@ -1,4 +1,5 @@
 import { toggleOverlay } from "../../util/configOverlays.js"
+import { scrollToFunction } from "../../js/miscellaneous.js";
 
 let btnNavbar_Open;
 let btnNavbar_Close;
@@ -61,6 +62,21 @@ function toggleNavbarList(type) {
     navbarList.setAttribute("aria-expanded", "false");
     toggleOverlay("hide", overlayHeader, {docUse: true})
   }
+}
+
+export async function setLinksHeader() {
+  const linkHeaderTo1 = document.getElementById("header-link-banner")
+  const linkHeaderTo2 = document.getElementById("header-link-sobre")
+  const linkHeaderTo3 = document.getElementById("header-link-servicos")
+  const linkHeaderTo4 = document.getElementById("header-link-planos")
+  const linkHeaderTo5 = document.getElementById("header-link-horarios")
+  const linkHeaderTo6 = document.getElementById("header-link-social")
+  linkHeaderTo1.addEventListener("click", () => { scrollToFunction('#secao-banner'); toggleNavbar("close"); toggleNavbarList("close")  })
+  linkHeaderTo2.addEventListener("click", () => { scrollToFunction('#secao-sobre'); toggleNavbar("close"); toggleNavbarList("close")  })
+  linkHeaderTo3.addEventListener("click", () => { scrollToFunction('#secao-servicos'); toggleNavbar("close"); toggleNavbarList("close")  })
+  linkHeaderTo4.addEventListener("click", () => { scrollToFunction('#secao-planos'); toggleNavbar("close"); toggleNavbarList("close")  })
+  linkHeaderTo5.addEventListener("click", () => { scrollToFunction('#secao-horarios'); toggleNavbar("close"); toggleNavbarList("close")  })
+  linkHeaderTo6.addEventListener("click", () => { scrollToFunction('#secao-social'); toggleNavbar("close"); toggleNavbarList("close")  })
 }
 
 export async function initHeader() {

@@ -19,6 +19,13 @@
   <!-- Skip Menu go to main content -->
   <a id="link-skip-main" tabindex="1" href="#main">Ir para o conteúdo principal</a>
   
+  <div id="alert-box" class="">
+    <p id="alert-msg">Copiado para a Área de Transferência</p>
+    <div id="alert-bar-wrapper">
+      <div id="alert-bar"></div>
+    </div>
+  </div>
+
   <button id="btn-scrollToTop" class="btn btn-tertiary" title="Go to top">
     <span>Ir para o topo</span>
     <i class="bi bi-arrow-up"></i>
@@ -29,24 +36,24 @@
   <main id="main">
 
     <!-- Banner -->
-    <section> 
+    <section id="secao-banner"> 
       <div class="container grid-2">
 
         <!-- LEFT -->
         <div class="banner-area banner-left">
           <h1 class="hero-title">Sua saúde começa aqui!</h1>
           <ul class="hero-links">
-            <li>Sobre a TopFitness</li>
-            <li>Contato</li>
-            <li>Horários</li>
+            <li id="hero-link-sobre"><span class="hvAnim hvFont left bottom">Sobre a TopFitness</span></li>
+            <li id="hero-link-social"><span class="hvAnim hvFont left bottom">Horários</span></li>
+            <li id="hero-link-contato"><span class="hvAnim hvFont left bottom">Contato</span></li>
           </ul>
-          <button class="btn btn-primary btn-banner">Conheça nossos planos</button>
+          <button id="hero-button-servicos" class="btn btn-primary btn-banner">Conheça nossos planos</button>
         </div>
         
         <!-- RIGHT -->
         <div class="banner-area banner-right">
           <div class="hero-img">
-            <img src="img/banner-topfitness-full.png" alt="Banner">
+            <img src="./public/assets/brand/banner-topfitness-full.png" alt="Banner">
           </div>
         </div>
 
@@ -54,7 +61,7 @@
     </section>
 
     <!-- Sobre -->
-    <section>
+    <section id="secao-sobre">
       <div class="container grid-2">
 
         <!-- CARROSSEL -->
@@ -63,9 +70,9 @@
           <div class="carousel">
 
             <div id="carouselSlides" class="carousel-slides">
-              <img src="img/1.jfif" alt="">
-              <img src="img/2.jfif" alt="">
-              <img src="img/3.jpeg" alt="">
+              <img src="./public/assets/images/topfitness/interior-1.png" alt="interior 1">
+              <img src="./public/assets/images/topfitness/interior-2.png" alt="interior 2">
+              <img src="./public/assets/images/topfitness/exterior-1.jpg" alt="exterior 1">
             </div>
 
             <!-- <button id="prevBtn" class="carousel-btn prev">
@@ -88,13 +95,14 @@
         
         <div class="sobre-area sobre-right">
           <h1 class="section-title">Sobre a TopFitness</h1>
-  
           <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur elit nulla, in porta felis condimentum eu. Morbi mattis nibh quis quam pellentesque suscipit.
+            Fundada em 2015 e consolidada entre 2018 e 2019, a Academia TopFitness surgiu para oferecer um ambiente acolhedor e motivador para quem busca saúde e qualidade de vida. Localizada na R. Mal. Eurico Gaspar Dutra, 1070 — Jardim Astúrias, São José do Rio Preto — SP, tornou-se referência na região pelo atendimento próximo e pela estrutura pensada para diferentes perfis de alunos.
           </p>
-  
           <p class="text">
-            Sed molestie ultricies eros at scelerisque. Phasellus consectetur urna nec ligula mattis consectetur. Aenean at nunc eu elit varius malesuada.
+            Seu proprietário, Dieny Cordeiro de Jesus, atleta de powerlifting, traz à academia uma visão prática de disciplina e dedicação. Essa experiência inspira o clima de treino sério, evolução constante e apoio aos alunos.
+          </p>
+          <p class="text">
+            Como academia de bairro, a TopFitness valoriza relações próximas, atendimento humanizado e presença forte na comunidade local.
           </p>
         </div>
 
@@ -102,7 +110,7 @@
     </section>
 
     <!-- Nossos Servicos -->
-    <section class="servicos">
+    <section id="secao-servicos" class="servicos">
       <div class="container">
 
         <div class="servicos-area">
@@ -111,17 +119,17 @@
           <div class="cards-container">
           
               <div class="card">
-                  <img src="/Imagens/musculacao.jpg" alt="Serviço 1">
+                  <img src="./public/assets/images/servicos/musculacao.jpg" alt="Serviço Musculação">
                   <h3>Musculação</h3>
                   <p>Treino com aparelhos e pesos livres para ganho de força e hipertrofia.</p>
               </div>
               <div class="card">
-                  <img src="/Imagens/personal.jpg" alt="Instrutores e Acompanhamento">
+                  <img src="./public/assets/images/servicos/personal.jpg" alt="Instrutores e Acompanhamento">
                   <h3>Instrutores & Acompanhamento</h3>
                   <p>Acompanhamento direto com instrutores para orientação, correção de exercícios e evolução contínua no treino.</p>
               </div>
               <div class="card">
-                  <img src="/Imagens/avaliacao.webp" alt="Suplementos e Produtos">
+                  <img src="./public/assets/images/servicos/produtos.webp" alt="Suplementos e Produtos">
                   <h3>Suplementos & Produtos</h3>
                   <p>Venda de suplementos, acessórios e itens essenciais para potencializar seus resultados.</p>
               </div>
@@ -133,7 +141,7 @@
     </section>
 
     <!-- Plano -->
-    <section class="planos">
+    <section id="secao-planos" class="planos">
       <div class="container">
       
         <div class="planos-area">
@@ -142,7 +150,7 @@
           <div class="planos-content">
             <div class="plano-card">
               <div class="plano-img">
-                <img src="/Imagens/plano.jpg" alt="Plano Essencial">
+                <img src="./public/assets/images/planos/plano-essencial.png" alt="Plano Essencial">
               </div>
               <div class="planos-line"></div>
               <div class="plano-info">
@@ -169,7 +177,7 @@
     </section>
 
     <!-- Horário -->
-    <section class="horarios">
+    <section id="secao-horarios" class="horarios">
       <div class="container">
 
         <div class="horarios-area">
@@ -227,7 +235,7 @@
     </section>
 
     <!-- Social -->
-    <section>
+    <section id="secao-social">
       <div class="container grid-2">
 
         <!-- LEFT -->
@@ -241,13 +249,13 @@
 
             <a href="https://www.instagram.com/dieny.cordeiro" title="Instagram" target="_blank" class="social-link social-link-instagram social-link-contato">
               <div class="social-icon-box">
-                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
               </div>
               <span class="hvAnim bottom left hvFont">Instagram</span>
             </a>
             <a href="https://www.facebook.com/tofintinss" title="Facebook" target="_blank" class="social-link social-link-facebook social-link-contato">
               <div class="social-icon-box">
-                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
               </div>
               <span class="hvAnim bottom left hvFont">Facebook</span>
             </a>
@@ -260,12 +268,13 @@
               <div class="icon-box"><i class="bi bi-whatsapp"></i></div>
             </a> -->
             
-            <a href="https://wa.me/5517992595323" target="_blank" class="social-link social-link-telephone social-link-contato">
+            <!-- <a href="https://wa.me/5517992595323" target="_blank" class="social-link social-link-telephone social-link-contato"> -->
+            <button id="btn-social-phone" title="Phone" class="social-link social-link-telephone social-link-contato">
               <div class="social-icon-box">
                 <i class="bi bi-telephone-fill"></i>
               </div>
               <span class="hvAnim bottom left hvFont">+55 17 99259-5323</span>
-            </a>
+            </butt>
 
           </div>
 

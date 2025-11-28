@@ -2,6 +2,7 @@
 import { initMedia } from "../hooks/media.js";
 import { loadHeader, loadFooter } from "./essentials.js";
 import { scrollToFunction, detectScroll, configScrollTopBtn } from "../js/miscellaneous.js";
+import copyToClipboard from "../util/copyToClipboard.js";
 
 // Utils Functions
 import { initTheme, toggleTheme } from "../hooks/utilsTheme.js";
@@ -10,7 +11,8 @@ import { updateMapSize } from './maps-configs.js';
 import { initCarousel } from "../util/carousel.js";
 
 // Import de Scripts de Componentes
-import { initHeader } from "../components/header/header.js";
+import { initHeader, setLinksHeader } from "../components/header/header.js";
+import { setLinksFooter } from "../components/footer/footer.js";
 import { initConfigs } from "../components/header/config-menu/site-configs.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -24,8 +26,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       await initLang();
       await loadHeader(); 
       await initHeader();
+      await setLinksHeader();
       await initConfigs();
       await loadFooter(); 
+      await setLinksFooter(); 
       await initCarousel(); 
     } catch (error) {
       console.error("Erro ao inicializar:", error);
@@ -69,4 +73,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     configScrollTopBtn(device, layout)
   });
 
+  // Link
+
+  // Banner
+  const linkToSobre = document.getElementById("hero-link-sobre")
+  const linkToContato = document.getElementById("hero-link-contato")
+  const linkToSocial = document.getElementById("hero-link-social")
+  const btnToServicos = document.getElementById("hero-button-servicos")
+  linkToSobre.addEventListener("click", () => { scrollToFunction('#secao-sobre') })
+  linkToContato.addEventListener("click", () => { scrollToFunction('#secao-social') })
+  linkToSocial.addEventListener("click", () => { scrollToFunction('#secao-horarios') })
+  btnToServicos.addEventListener("click", () => { scrollToFunction('#secao-servicos') })
+  
+  const btnSocialPhone = document.getElementById("btn-social-phone")
+  btnSocialPhone.addEventListener("click", () => { copyToClipboard('+55 17 99259-5323') })
 });
